@@ -207,6 +207,14 @@ a{
 
 }
 
+.beverage-menu-title{
+	background-color: #027789;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+
+}
+
 .food-menu{
 	display: flex;
 }
@@ -214,4 +222,9 @@ a{
 .menu-body{
 	border-left: 5px double;
 	margin-left : 100px;
+}
+
+
+.beverage-menu-body{
+	border-left: 5px double;
 }

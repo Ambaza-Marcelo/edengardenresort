@@ -154,11 +154,12 @@ a{
 }
 
 .menu-body{
+	border-right: 5px double;
 	border-left: 5px double;
-	margin-left : 100px;
 }
 
 
 .beverage-menu-body{
+	border-right: 5px double;
 	border-left: 5px double;
 }

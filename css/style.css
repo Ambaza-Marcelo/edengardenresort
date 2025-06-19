@@ -121,16 +121,10 @@ a{
 	border-left: 5px double;
 	font-size: 12px;
 	}
-	.menu-picture{
-		width: 50px;
+	img{
+		width: 85px;
 	}
-
-	body{
-		font-size: 16px;
-	}
-
 	
-
 }
 
 .food-menu-title{
@@ -149,17 +143,7 @@ a{
 
 }
 
-.food-menu{
-	display: flex;
-}
-
 .menu-body{
-	border-right: 5px double;
-	border-left: 5px double;
-}
-
-
-.beverage-menu-body{
 	border-right: 5px double;
 	border-left: 5px double;
 }

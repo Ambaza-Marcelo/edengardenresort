@@ -118,11 +118,12 @@ a{
   }
 
   .menu-body{
-	border-left: 5px double;
-	font-size: 12px;
+	border-left: 3px double;
+	font-size: 9px;
 	}
+
 	img{
-		width: 50px;
+		width: 35px;
 	}
 	
 }

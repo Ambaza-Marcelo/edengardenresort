@@ -1,24 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>BREAKFAST MENU</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Eden Garden Resort - Breakfast Menu">
+	<title>BREAKFAST MENU - Eden Garden Resort</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		.breakfast-menu-body {
+			padding: 20px;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		.back-link {
+			display: inline-block;
+			background-color: #027789;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 25px;
+			margin: 20px;
+			text-decoration: none;
+			transition: background-color 0.3s ease;
+		}
+		.back-link:hover {
+			background-color: #035d6b;
+		}
+		.breakfast-images {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			gap: 15px;
+			margin: 20px 0;
+		}
+		.breakfast-images img {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		}
+		.breakfast-item {
+			background-color: #f9f9f9;
+			padding: 20px;
+			border-radius: 8px;
+			margin: 20px 0;
+			text-align: center;
+		}
+		.breakfast-item h2 {
+			color: #027789;
+			margin-bottom: 15px;
+			font-size: clamp(18px, 3vw, 24px);
+		}
+		.price {
+			background-color: #027789;
+			color: #fff;
+			padding: 10px 15px;
+			border-radius: 5px;
+			display: inline-block;
+			margin-top: 10px;
+			font-weight: bold;
+			font-size: clamp(14px, 2.5vw, 18px);
+		}
+		@media (max-width: 768px) {
+			.breakfast-images {
+				grid-template-columns: repeat(2, 1fr);
+				gap: 10px;
+			}
+			.breakfast-menu-body {
+				padding: 10px;
+			}
+		}
+		@media (max-width: 480px) {
+			.breakfast-images {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
 </head>
 <body>
-	<div>
-			<div class="breakfast-menu-body">
-				<div>
-					<table>
-						<tr>
-							<td rowspan="19"><img src="images/breakfast.jpg" width="150"><br><br> <img src="images/breakfast2.jpg" width="150"><br><br> <img src="images/breakfast3.jpg" width="150">
-							<td>PETIT-DÉJEUNER ANGLAIS / ENGLISH BREAKFAST</td>
-							<td> : 70.000 FBU</td>
-						</tr>			
-					</table>
-				</div>
-			</div>
+	<a href="index.html" class="back-link">← Retour / Back</a>
+	<div class="breakfast-menu-body">
+		<div class="breakfast-images">
+			<img src="images/breakfast.jpg" alt="Breakfast 1">
+			<img src="images/breakfast2.jpg" alt="Breakfast 2">
+			<img src="images/breakfast3.jpg" alt="Breakfast 3">
+		</div>
+		
+		<div class="breakfast-item">
+			<h2>🍳 PETIT-DÉJEUNER ANGLAIS / ENGLISH BREAKFAST</h2>
+			<div class="price">💰 70.000 FBU</div>
 		</div>
 	</div>
 </body>

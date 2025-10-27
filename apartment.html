@@ -1,47 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>APARTMENT MENU</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>APARTMENT MENU - Eden Garden Resort</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		.apt-images {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+			gap: 15px;
+			margin: 20px 0;
+		}
+		.apt-images img {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		}
+		.apt-description {
+			background-color: #f9f9f9;
+			padding: 20px;
+			border-radius: 8px;
+			margin: 20px 0;
+			line-height: 1.8;
+		}
+		.apt-description h2 {
+			color: #027789;
+			margin-bottom: 15px;
+			font-size: clamp(18px, 3vw, 24px);
+		}
+		.apt-description ul {
+			margin: 15px 0;
+			padding-left: 25px;
+		}
+		.apt-description li {
+			margin: 10px 0;
+			font-size: clamp(13px, 2vw, 16px);
+		}
+		.price-highlight {
+			background-color: #027789;
+			color: #fff;
+			padding: 10px 15px;
+			border-radius: 5px;
+			display: inline-block;
+			margin-top: 10px;
+			font-weight: bold;
+			font-size: clamp(14px, 2.5vw, 18px);
+		}
+		.back-link {
+			display: inline-block;
+			background-color: #027789;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 25px;
+			margin: 20px;
+			text-decoration: none;
+			transition: background-color 0.3s ease;
+		}
+		.back-link:hover {
+			background-color: #035d6b;
+		}
+		@media (max-width: 768px) {
+			.apt-images {
+				grid-template-columns: repeat(2, 1fr);
+				gap: 10px;
+			}
+			.apt-description {
+				padding: 15px;
+			}
+		}
+		@media (max-width: 480px) {
+			.apt-images {
+				grid-template-columns: 1fr;
+			}
+			.apt-description {
+				padding: 10px;
+			}
+		}
+	</style>
 </head>
 <body>
-	<div>
-			<div class="apt-menu-body">
-				<div>
-					<table>
-						<tr>
-							<td rowspan="19"><img src="images/APT1.jpg" width="150"><br><br> <img src="images/APT3.jpg" width="150"><br><br> <img src="images/CHAMBRE1.jpg" width="150"><br><br> <img src="images/APT4.jpg" width="150">
-							<td>Ce lieu vous offrira un vrai moment de détente.Cheminée décorative,<br> espace chaleureux… tout est pensé pour vous faire voyager.Situé à 1km d'Eden Garden Resort,<br> Kajaga,Chaussée d'Uvira,Bujumbura,<br> au calme, sur une route goudronnée intérieure.
-							<ul>
-							<li>3 chambres,salon,Barza,douche et toilette par chaque chambre</li>
-							<li>Cuisine Interne</li>
-							<li>Stock Interne</li>
-							<li>réseau satellitaire de haut débit spaceX starlink</li>
-							<li>système de climatisation</li>
-							<li>Télévision</li>
-							<li>100 USD/JOUR</li>
-							</ul>
-							</td>
-						</tr>
-						<tr>
-							<td>/* This place will offer you a true moment of relaxation.<br> Decorative fireplace, warm space...<br> everything is designed to transport you. Located 1 km from Eden Garden Resort,<br> Kajaga, Chaussée d'Uvira, Bujumbura, in a quiet area, on an interior paved road.
+	<a href="index.html" class="back-link">← Retour / Back</a>
+	<div class="apt-menu-body">
+		<div class="apt-images">
+			<img src="images/APT1.jpg" alt="Apartment View 1">
+			<img src="images/APT3.jpg" alt="Apartment View 2">
+			<img src="images/CHAMBRE1.JPG" alt="Bedroom View">
+			<img src="images/APT4.jpg" alt="Apartment View 3">
+		</div>
 
-							<ul>
-							<li>3 bedrooms, living room, barza, shower and toilet in each room</li>
-							<li>Internal kitchen</li>
-							<li>Internal stock</li>
-							<li>SpaceX Starlink high-speed satellite network</li>
-							<li>Air conditioning system</li>
-							<li>Television</li>
-							<li>100 USD/DAY */</li>
-							</ul>
-							</td>
-						</tr>			
-					</table>
-				</div>
-			</div>
+		<div class="apt-description">
+			<h2>🏡 Français</h2>
+			<p>Ce lieu vous offrira un vrai moment de détente. Cheminée décorative, espace chaleureux… tout est pensé pour vous faire voyager. Situé à 1km d'Eden Garden Resort, Kajaga, Chaussée d'Uvira, Bujumbura, au calme, sur une route goudronnée intérieure.</p>
+			<ul>
+				<li>3 chambres, salon, Barza, douche et toilette par chaque chambre</li>
+				<li>Cuisine Interne</li>
+				<li>Stock Interne</li>
+				<li>Réseau satellitaire de haut débit SpaceX Starlink</li>
+				<li>Système de climatisation</li>
+				<li>Télévision</li>
+			</ul>
+			<div class="price-highlight">💰 100 USD/JOUR</div>
+		</div>
+
+		<div class="apt-description">
+			<h2>🏡 English</h2>
+			<p>This place will offer you a true moment of relaxation. Decorative fireplace, warm space... everything is designed to transport you. Located 1 km from Eden Garden Resort, Kajaga, Chaussée d'Uvira, Bujumbura, in a quiet area, on an interior paved road.</p>
+			<ul>
+				<li>3 bedrooms, living room, barza, shower and toilet in each room</li>
+				<li>Internal kitchen</li>
+				<li>Internal stock</li>
+				<li>SpaceX Starlink high-speed satellite network</li>
+				<li>Air conditioning system</li>
+				<li>Television</li>
+			</ul>
+			<div class="price-highlight">💰 100 USD/DAY</div>
 		</div>
 	</div>
 </body>

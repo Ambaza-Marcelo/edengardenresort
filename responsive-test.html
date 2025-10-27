@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eden Garden - Responsive Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #027789;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .test-card {
+            border: 2px solid #027789;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .test-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(2, 119, 137, 0.3);
+        }
+        .test-card h2 {
+            color: #027789;
+            margin-bottom: 15px;
+        }
+        .test-card a {
+            display: inline-block;
+            background-color: #027789;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+            margin: 5px;
+        }
+        .test-card a:hover {
+            background-color: #035d6b;
+        }
+        .device-info {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .device-info h3 {
+            color: #027789;
+            margin-bottom: 10px;
+        }
+        .device-info p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+        .breakpoint-indicator {
+            background: linear-gradient(to right, #027789, #035d6b);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .instructions {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .instructions h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        .instructions ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .test-grid {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Eden Garden Resort - Responsive Design Test</h1>
+        
+        <div class="breakpoint-indicator" id="breakpoint">
+            Current Device Width: <span id="width"></span>px
+        </div>
+
+        <div class="instructions">
+            <h3>📱 How to Test Responsiveness:</h3>
+            <ul>
+                <li><strong>Desktop:</strong> Resize your browser window to see how the layout adapts</li>
+                <li><strong>Mobile/Tablet:</strong> Open on your actual device or use browser DevTools (F12)</li>
+                <li><strong>Chrome DevTools:</strong> Press F12 → Click device toolbar icon → Select different devices</li>
+                <li><strong>Test all breakpoints:</strong> 360px, 480px, 768px, 992px, 1400px, 1900px</li>
+            </ul>
+        </div>
+
+        <div class="device-info">
+            <h3>📊 Responsive Breakpoints Implemented:</h3>
+            <p><strong>📱 Very Small Mobile (≤360px):</strong> Optimized for small phones like iPhone SE</p>
+            <p><strong>📱 Small Mobile (≤480px):</strong> Standard mobile phones</p>
+            <p><strong>📱 Mobile (≤768px):</strong> Large phones and small tablets</p>
+            <p><strong>💻 Tablet (≤992px):</strong> iPads and tablets in portrait mode</p>
+            <p><strong>🖥️ Medium Desktop (≤1400px):</strong> Standard laptop screens</p>
+            <p><strong>🖥️ Large Desktop (≤1900px):</strong> Large monitors</p>
+            <p><strong>🖥️ Extra Large (>1900px):</strong> Ultra-wide monitors</p>
+        </div>
+
+        <h2 style="text-align: center; color: #027789; margin-bottom: 20px;">Test All Pages:</h2>
+
+        <div class="test-grid">
+            <div class="test-card">
+                <h2>🏠 Home Page</h2>
+                <p>Test landing page responsiveness</p>
+                <a href="index.html" target="_blank">Test Index</a>
+            </div>
+
+            <div class="test-card">
+                <h2>🍳 Breakfast Menu</h2>
+                <p>Test breakfast page layout</p>
+                <a href="breakfast.html" target="_blank">Test Breakfast</a>
+            </div>
+
+            <div class="test-card">
+                <h2>🍺 Beverage Menu</h2>
+                <p>Test beverage menu tables</p>
+                <a href="beverage.html" target="_blank">Test Beverage</a>
+            </div>
+
+            <div class="test-card">
+                <h2>🍽️ Food Menu</h2>
+                <p>Test food menu responsiveness</p>
+                <a href="food.html" target="_blank">Test Food</a>
+            </div>
+
+            <div class="test-card">
+                <h2>🏢 Apartment Info</h2>
+                <p>Test apartment page layout</p>
+                <a href="apartment.html" target="_blank">Test Apartment</a>
+            </div>
+        </div>
+
+        <div class="device-info">
+            <h3>✅ What Was Improved:</h3>
+            <p><strong>1. Flexible Layouts:</strong> All elements now use responsive units (%, vw, clamp)</p>
+            <p><strong>2. Responsive Images:</strong> Images scale automatically based on screen size</p>
+            <p><strong>3. Mobile-First Tables:</strong> Menu tables adapt on mobile devices</p>
+            <p><strong>4. Touch-Friendly:</strong> Buttons and links are properly sized for touch</p>
+            <p><strong>5. Readable Text:</strong> Font sizes scale smoothly with clamp() function</p>
+            <p><strong>6. Grid Layouts:</strong> Apartment and breakfast pages use CSS Grid</p>
+            <p><strong>7. Navigation:</strong> Back buttons added for better UX</p>
+            <p><strong>8. Meta Tags:</strong> Proper viewport and SEO meta tags added</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="index.html" style="display: inline-block; background-color: #027789; color: white; padding: 15px 40px; text-decoration: none; border-radius: 30px; font-size: 1.2em;">
+                🏠 Go to Eden Garden Resort
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Update width indicator
+        function updateWidth() {
+            const width = window.innerWidth;
+            document.getElementById('width').textContent = width;
+            
+            let breakpoint = '';
+            if (width <= 360) {
+                breakpoint = '📱 Very Small Mobile';
+            } else if (width <= 480) {
+                breakpoint = '📱 Small Mobile';
+            } else if (width <= 768) {
+                breakpoint = '📱 Mobile/Large Phone';
+            } else if (width <= 992) {
+                breakpoint = '💻 Tablet';
+            } else if (width <= 1400) {
+                breakpoint = '🖥️ Medium Desktop';
+            } else if (width <= 1900) {
+                breakpoint = '🖥️ Large Desktop';
+            } else {
+                breakpoint = '🖥️ Extra Large Desktop';
+            }
+            
+            document.getElementById('breakpoint').innerHTML = 
+                `<div style="font-size: 1.5em; margin-bottom: 5px;">${breakpoint}</div>
+                 Current Width: <span id="width">${width}</span>px`;
+        }
+
+        updateWidth();
+        window.addEventListener('resize', updateWidth);
+    </script>
+</body>
+</html>
+

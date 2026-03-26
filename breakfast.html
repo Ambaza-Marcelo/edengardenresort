@@ -25,52 +25,49 @@
 		.back-link:hover {
 			background-color: #035d6b;
 		}
-		.breakfast-images {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-			gap: 15px;
-			margin: 20px 0;
-		}
-		.breakfast-images img {
+		.breakfast-menu-body table {
 			width: 100%;
-			height: auto;
-			border-radius: 8px;
-			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+			border-collapse: collapse;
 		}
-		.breakfast-item {
-			background-color: #f9f9f9;
-			padding: 20px;
-			border-radius: 8px;
-			margin: 20px 0;
-			text-align: center;
+		.breakfast-menu-body td {
+			padding: 12px 10px;
+			vertical-align: middle;
+			border: 1px solid #ddd;
 		}
-		.breakfast-item h2 {
+		.breakfast-menu-body td.item-name {
+			width: 68%;
+			font-weight: 500;
+		}
+		.breakfast-menu-body td.item-price {
+			width: 32%;
+			text-align: right;
+			font-weight: 700;
 			color: #027789;
-			margin-bottom: 15px;
-			font-size: clamp(18px, 3vw, 24px);
+			white-space: nowrap;
 		}
-		.price {
-			background-color: #027789;
-			color: #fff;
-			padding: 10px 15px;
-			border-radius: 5px;
-			display: inline-block;
-			margin-top: 10px;
-			font-weight: bold;
-			font-size: clamp(14px, 2.5vw, 18px);
+		.breakfast-menu-body td.section-title {
+			background: #f4f7f8;
+			color: #027789;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 0.3px;
 		}
 		@media (max-width: 768px) {
-			.breakfast-images {
-				grid-template-columns: repeat(2, 1fr);
-				gap: 10px;
-			}
 			.breakfast-menu-body {
 				padding: 10px;
 			}
-		}
-		@media (max-width: 480px) {
-			.breakfast-images {
-				grid-template-columns: 1fr;
+			.breakfast-menu-body td,
+			.breakfast-menu-body th {
+				display: table-cell !important;
+				width: auto !important;
+			}
+			.breakfast-menu-body td {
+				padding: 10px 8px;
+				font-size: 14px;
+			}
+			.breakfast-menu-body td.item-price {
+				font-size: 13px;
 			}
 		}
 	</style>
@@ -78,16 +75,220 @@
 <body>
 	<a href="index.html" class="back-link">← Retour / Back</a>
 	<div class="breakfast-menu-body">
-		<div class="breakfast-images">
-			<img src="images/breakfast.jpg" alt="Breakfast 1">
-			<img src="images/breakfast2.jpg" alt="Breakfast 2">
-			<img src="images/breakfast3.jpg" alt="Breakfast 3">
-		</div>
-		
-		<div class="breakfast-item">
-			<h2>🍳 PETIT-DÉJEUNER ANGLAIS / ENGLISH BREAKFAST</h2>
-			<div class="price">💰 70.000 FBU</div>
-		</div>
+		<table>
+	<tr>
+        <td>Petit Déjeuner</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+	<tr>
+        <td>Petit Déjeuner Complet Enfant Moins De 12ans</td>
+        <td> 70,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Petit Déjeuner Complet Adulte</td>
+        <td> 100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Petit Dejeuner Anglais/English Break Fast</td>
+        <td> 60,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Omelette Eden Garden/Eden Garden Omelette</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Bananes Vertes A La Burundaise/Burundian Style Green Bananas</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Omelette Jambon Et Fromage/Ham And Cheese Omelette</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chapati Haricot/Red Beans With Chapati</td>
+        <td> 30,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Patate Douce Haricot/Red Beans With Sweet Patato</td>
+        <td> 30,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Croissant Jambon Et Fromage/Ham And Cheese Croissant</td>
+        <td> 25,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Omelette Nature/Plain Omelette</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Oeuf Dur/Hard-Boiled Egg</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Oeuf Sur Plat/Fried Egg</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Croissant Nature/Plain Croissant</td>
+        <td> 12,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pain Au Chocolat/Chocolate Bread</td>
+        <td> 12,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+		</table>
 	</div>
+	<script>
+		(function () {
+			const table = document.querySelector(".breakfast-menu-body table");
+			if (!table) return;
+
+			const rows = Array.from(table.querySelectorAll("tr"));
+			const hasDigit = (value) => /\d/.test(value);
+			const normalize = (value) => value.replace(/\s+/g, " ").trim();
+			const cleanTitle = (value) =>
+				normalize(value)
+					.replace(/\s*\/?\s*(godet|bouteille)\s*(\/\s*(godet|bouteille)\s*)*/gi, "")
+					.replace(/\s*\/\s*$/, "")
+					.trim();
+			const formatPrice = (prices) => {
+				if (!prices.length) return "";
+				const joined = prices.join(" / ");
+				return /fbu$/i.test(joined) ? joined : `${joined} FBU`;
+			};
+
+			rows.forEach((row) => {
+				const cells = Array.from(row.querySelectorAll("td"));
+				if (!cells.length) return;
+
+				const nonEmpty = cells
+					.map((td) => ({
+						text: normalize(td.textContent || ""),
+						html: td.innerHTML.trim(),
+					}))
+					.filter((cell) => cell.text.length > 0);
+
+				if (!nonEmpty.length) {
+					row.remove();
+					return;
+				}
+
+				const firstCell = nonEmpty[0];
+				const priceValues = nonEmpty
+					.slice(1)
+					.map((cell) => cell.text)
+					.filter((text) => hasDigit(text));
+				const titleLike =
+					nonEmpty.length === 1 ||
+					(!priceValues.length &&
+						/(petit dejeuner|breakfast|nos|menu|boissons)/i.test(
+							firstCell.text
+						));
+
+				row.innerHTML = "";
+
+				if (titleLike) {
+					const td = document.createElement("td");
+					td.className = "section-title";
+					td.colSpan = 2;
+					td.textContent = cleanTitle(firstCell.text);
+					row.appendChild(td);
+					return;
+				}
+
+				const nameTd = document.createElement("td");
+				nameTd.className = "item-name";
+				nameTd.innerHTML = firstCell.html;
+
+				const priceTd = document.createElement("td");
+				priceTd.className = "item-price";
+				priceTd.textContent = formatPrice(priceValues);
+
+				if (!priceTd.textContent) {
+					row.remove();
+					return;
+				}
+
+				row.appendChild(nameTd);
+				row.appendChild(priceTd);
+			});
+		})();
+	</script>
 </body>
 </html>

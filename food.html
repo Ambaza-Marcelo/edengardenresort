@@ -20,13 +20,78 @@
 		.back-link:hover {
 			background-color: #035d6b;
 		}
+		.food-menu-title {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+			gap: 8px;
+			padding: 12px;
+			margin: 10px 0;
+		}
+		.food-menu-title a {
+			display: block;
+			border: 1px solid rgba(255, 255, 255, 0.25);
+			border-radius: 10px;
+		}
+		.food-menu-title h3 {
+			margin: 0;
+			padding: 10px 8px;
+			font-size: clamp(12px, 1.7vw, 14px);
+			line-height: 1.3;
+		}
+		.menu-anchor {
+			display: block;
+			scroll-margin-top: 12px;
+		}
+		.food-menu .menu-body table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+		.food-menu .menu-body td {
+			padding: 12px 10px;
+			vertical-align: middle;
+		}
+		.food-menu .menu-body td.item-name {
+			width: 68%;
+			font-weight: 500;
+		}
+		.food-menu .menu-body td.item-price {
+			width: 32%;
+			text-align: right;
+			font-weight: 700;
+			color: #027789;
+			white-space: nowrap;
+		}
+		.food-menu .menu-body td.section-title {
+			background: #f4f7f8;
+			color: #027789;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 0.3px;
+		}
+		html {
+			scroll-behavior: smooth;
+		}
+		@media (max-width: 768px) {
+			.food-menu .menu-body td,
+			.food-menu .menu-body th {
+				display: table-cell !important;
+				width: auto !important;
+			}
+			.food-menu .menu-body td {
+				padding: 10px 8px;
+				font-size: 14px;
+			}
+			.food-menu .menu-body td.item-price {
+				font-size: 13px;
+			}
+		}
 	</style>
 </head>
 <body>
 	<a href="index.html" class="back-link">← Retour / Back</a>
 	<div>
 		<div class="food-menu-title">
-			<br><br>
 			<a href="#hotstarters">
 				<div>
 					<h3>NOS ENTRÉES CHAUDES / HOT STARTERS</h3>
@@ -96,1772 +161,2091 @@
 				<div>
 					<h3>JUS FRAIS / FRESH JUICES|MILKSHAKES|SMOTHIES</h3>
 				</div>
-			</a><br><br>
+			</a>
 		</div>
 		<div class="food-menu">
 			<div class="menu-body">
 				<div>
 					<table>
-						<tr>
-							<th colspan="2" id="hotstarters">NOS ENTRÉES CHAUDES / HOT STARTERS</th>
-						</tr>
-						<tr>
-							<td rowspan="8"><img src="images/soup1.jpg" width="150"><br><img src="images/soup2.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SOUPE DE LÉGUMES / VEGETABLE SOUP</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SOUPE DE CAROTTES / CARROT SOUP</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SOUPE DE CAROTTES AU GINGEMBRE / CARROT SOUP GINGER</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SOUPE DE COURGE / SQUASH SOUP</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SOUPE À LA TOMATE / TOMATO SOUP</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SOUPE DE POISSON / FISH SOUP</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">40.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SOUPE DE POULET AU LAIT DE CACAO / CHICKEN SOUP WITH COCOA MILK</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">50.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SOUPE DE CUISSE DE GRENOUILLE / FROG LEG SOUP</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">60.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="coldstarters">NOS ENTRÉES FROIDES / COLD STARTERS</th>
-						</tr>
-						<tr>
-							<td rowspan="7"><img src="images/salad1.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">AVOCAT VINAIGRETTE / AVOCADO VINAIGRETTE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SALADE MIXTE / MIXED SALAD</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SALADE GRECQUE / GREEK SALAD</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SALADE DU CHEF / CHEF'S SALAD</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SALADE DE PAPAYE VERTE / GREEN PAPAYA SALAD</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SALADE DE BŒUF ÉPICÉE / SPICY BEEF SALAD</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">40.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SALADE DE CESAR AU POULET / CHICKEN CAESAR SALAD</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">40.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="localdelicacy">PLATS AFRICAINS/AFRICA LOCAL DELICACY</th>
-						</tr>
-						<tr>
-							<td rowspan="11"><img src="images/breakfast.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">PAIN TRADITIONNEL CHAPATI / TRADITIONAL CHAPATI BREAD</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">PAIN TRADITIONNEL CHAPATI + HARICOT / TRADITIONAL CHAPATI BREAD + BEAN</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">PATATE DOUCE / SWEET POTATO</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">BANANE VERTE À LA BURUNDAISE / BURUNDIAN-STYLE GREEN BANANAS</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">PETIT-DÉJEUNER ANGLAIS / ENGLISH BREAKFAST</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">PETIT-DÉJEUNER Enfant 3-12ans /CHILD BREAKFAST</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">50.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">QUESADILLAS AU POULET / CHICKEN QUESADILLAS</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">FILET DE BOEUF AU FROMAGE / BEEF FILLET WITH CHEESE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">90.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POISSON AU BEURRE / BUTTER FISH</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POULET STUMP / STUMP CHICKEN</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">LANIÈRES DE POULET / STRIPS CHICKEN</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="tapas">NOS AMUSES BOUCHES / TAPAS</th>
-						</tr>
-						<tr>
-							<td rowspan="8"><img src="images/samossa.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">ASSIETTE DE FROMAGE / CHEESE PLATE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">AILES DE POULET / CHICKEN WINGS</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SAMOUSSA AU BOEUF / BEEF SAMOSA</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CUISSE DE GRENOUILLE / FLOG LEG</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">60.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">ASSIETTE DE NDAGALA / NDAGALA PLATE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">BÂTONET DE POISSON / FISH STICK</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">40.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">ROULEAU DE PRINTEMP AU POULET / CHICKEN SPRING ROLL</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">ASSIETTE EDEN GARDEN / EDEN GARDEN PLATE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="pastas">NOS PÂTES / PASTAS</th>
-						</tr>
-						<tr>
-							<td rowspan="5"><img src="images/pasta.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SPAGHETTI BOLOGNAISE / SPAGHETTI BOLOGNESE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">45.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SPAGHETTI CARBONARA / SPAGHETTI CARBONARA</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">45.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">LASAGNE(BOEUF OU LÉGUMES) / LASAGNA (BEEF OR VEGETABLES)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SPAGHETTI AUX LÉGUMES / SPAGHETTI WITH VEGETABLES</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">40.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SPAGHETTI AU POULET(SAUCE AU CHOIX) / SPAGHETTI WITH CHICKEN (SAUCE OF YOUR CHOICE)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2">PIZZERIA</th>
-						</tr>
-						<tr>
-							<td rowspan="13"><img src="images/pizza.jpg" width="150"><br><img src="images/pizza2.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">QUELQUE CHOSE DE VIANDE (JAMBON, PEPPERONI, BACON, BOEUF HACHÉ ; SAUCE BBQ) / SOMETHING MEATY (HAM, PEPPERONI, BACON, GROUND BEEF; BBQ SAUCE)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">STEAK DE BŒUF ET CHAMPIGNONS (MORCEAUX DE STEAK DE BŒUF, CHAMPIGNONS, TOMATE, OIGNON, SAUCE DÉBONAIRS) / BEEF STEAK&MUSHROOM (BEEF STEAK PIECES, MUSHROOM, TOMATO, ONION, DEBONAIRS SAUCE)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">60.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">FIESTA MEXICAINE (BOEUF HACHÉ, JALAPENO, POIVRON VERT, OIGNON, MEXICAIN) / MEXICAN FIESTA (GROUND BEEF, JALAPENO, GREEN PEPPER, ONION, MEXICAN)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">55.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">QUATRE SAISONS (PEPPERONI, CHAMPIGNONS, OLIVES, POIVRON VERT, OIGNON) / FOUR SEASONS (PEPPERONI, MUSHROOM, OLIVES, GREEN PEPPER, ONION)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">55.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">HAWAÏEN (JAMBON ; ANANAS) / HAWAIIAN (HAM; PINEAPPLE)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">65.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POULET TIKKA (POULET, CHAMPIGNONS, POIVRON DOUX, OIGNON, SAUCE TIKKA, OIGNON) / TIKKA CHICKEN (CHICKEN, MUSHROOM, SWEET BELL PEPPER, ONION, TIKKA SAUCE, SPRING ONION)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POULET ET CHAMPIGNONS (POULET, CHAMPIGNONS; TOMATE, OIGNON; SAUCE DÉBONNAIRS) / SWEET CHILI CHICKEN (CHICKEN, SWEET BELL PEPPER, FETA, SWEET CHILI SAUCE, SPRING ONION)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POULET AIGRE-DOUCE (POULET, POIVRON VERT, ANANAS, SAUCE AIGRE-DOUCE) / SWEET&SOUR CHICKEN (CHICKEN, GREEN PEPPER, PINEAPPLE, SWEET&SOUR SAUCE)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POULET BBQ (POULET, CHAMPIGNONS, OIGNON, SAUCE BBQ, OIGNON DE JEUNER) / BBQ CHICKEN (CHICKEN, MUSHROOM, ONION, BBQ SAUCE, SPRING ONION)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">TROIS FROMAGESO / THREE CHEESES (MOZARELLA, CHEDDAR, FETA, POIVRON DOUX, OIGNON / MOZARELLA, CHEDDAR, FETA, SWEET PEPPER, ONION)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">120.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">LÉGUMES ROUGES PIQUANTS / RED HOT VEGGIE (MOZARELLA, CHEDDAR, FETA, POIVRON DOUX, OIGNON POIVRON VERT, JALAPENO, POIVRON DOUX, SAUCE MAYO ÉPICÉE / GREEN PEPPER, JALAPENO, SWEET BELL PEPPER, SPICY MAYO SAUCE)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">60.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">MARGHERITA CLASSIQUE / CLASSIC MARGHERITA (MÉLANGE SPÉCIAL DE TOMATE, DE SAUCE À PIZZA ET DE FROMAGE MOZARELLA / SPECIAL BLEND OF TOMATO, PIZZA SAUCE & MOZARELLA CHEESE)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">60.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="sandwich">NOS SANDWICHS</th>
-						</tr>
-						<tr>
-							<td rowspan="8"><img src="images/burger.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SANDWICH AU FILET DE BOEUF / BEEF FILLET SANDWICH</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">45.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SANDWICH AUX LÉGUMES / VEGETABLE SANDWICH</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CLUB SANDWICH / SANDWICH CLUB</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">45.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CROQUE MONSIEUR /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">40.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CROQUE MADAME</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">40.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SANDWICH AU POULET OU BOEUF / CHICKEN OR BEEF SANDWICH</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">50.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">BURGER DE BOEUF / BEEF BURGER</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">50.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Double BURGER DE BOEUF / DOUBLE BEEF BURGER</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="sandwich">NOS OMELETTES</th>
-						</tr>
-						<tr>
-							<td rowspan="5"><img src="images/omolette.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">ŒUF DUR / HARD-BOILED EGG</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">ŒUF SUR PLAT / FRIED EGG</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">OMELETTE NATURE / PLAIN OMELETTE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">EDEN GARDEN OMELETTE /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">OMELETTE JAMBO FROMAGE / HAM AND CHEESE OMELETTE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="pork">NOS PORCS / PORKS</th>
-						</tr>
-						<tr>
-							<td rowspan="5"><img src="images/pork1.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CÔTELETTE DE PORC GRILLÉE / GRILLED PORK CHOP</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">COTELETTE DE PORC SAUCE AU CHOIX / PORK CHOP WITH SAUCE OF YOUR CHOICE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">85.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CÔTELETTE DE PORC À L'ANANAS / PORK CHOP WITH PINEAPPLE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">85.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">FILET DE PORC / PORK FILLET</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">90.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="pork">NOS FRUITS DE MER / SEA FOODS</th>
-						</tr>
-						<tr>
-							<td rowspan="5"><img src="images/lobster.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">LANGOUSTE / LOBSTER</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">150.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CREVETTE / SHRIMP</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SALADE DE SAUMON FUMÉ / SALADE DE SAUMON FUMÉ</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">STEAK SAUMON MEUNIERE / SALMON STEAK MEUNIERE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">250.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CALAMAR /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="fish">NOS POISSONS / FISH</th>
-						</tr>
-						<tr>
-							<td rowspan="11"><img src="images/fish.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">FILET DE CAPITAINE / CAPTAIN'S FILLET</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">85.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">FILET DE SANGALA EN PAPILLOTES / SANGALA FILLET IN PAPILLOTES</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SANGALA MEUNIERE /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SANGALA GRATINÉ / SANGALA GRATIN</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">EMINCÉ DE SANGALA / SLICED SANGALA</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">BROCHETTE DE SANGALA / SANGALA SKEWER</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">BROCHETTE INONZI / INONZI SKEWER</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">90.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">FILET INONZI / INONZI FILLET</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">90.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">KUHE GRAND / KUHE LARGE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">450.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">KUHE MOYEN / KUHE MEDIUM</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">350.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">KUHE PETIT / KUHE SMALL</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">250.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="fish">NOS POULETS / CHICKEN</th>
-						</tr>
-						<tr>
-							<td rowspan="13"><img src="images/chicken.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">1 POULET ENTIER / 1 WHOLE CHICKEN</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">170.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">1/2 DE POULET / 1/2 CHICKEN</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">85.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">1/4 DE POULET / 1/4 CHICKEN</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">1 POULET SÉNÉGALAIS ENTIER / 1 WHOLE SENEGALESE CHICKEN</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">1/2 POULET SÉNÉGALAIS ENTIER / 1/2 WHOLE SENEGALESE CHICKEN</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">BROCHETTE DE POULET / CHICKEN SKEWER</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">BROCHETTE DE SANGALA / SANGALA SKEWER</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">EMINCÉ DE POULET / SLICED CHICKEN</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POULET AU CURRY / CHICKEN CURRY</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">BLANC DE POULET / CHICKEN BREAST</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POULET KFC / KFC CHICKEN</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">90.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">ESCALOPPE DE POULET / CHICKEN ESCALOPE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">90.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CORDON BLEU AU POULET / CHICKEN CORDON BLEU</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="beef">NOS BOEUFS / BEEF</th>
-						</tr>
-						<tr>
-							<td rowspan="8"><img src="images/beef.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">EMINCÉ DE BOEUF / SLICED BEEF</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">65.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">FILET DE BOEUF EDEN GARDEN / EDEN GARDEN BEEF FILLET</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">BROCHETTE DE BOEUF / BEEF SKEWER</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">FILLET DE BOEUF GRILLÉ / GRILLED FILLET FILLET</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">75.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">FILET DE BŒUF À LA SAUCE PROVENÇALE / BEEF FILLET WITH PROVENCAL SAUCE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">STEAK T-BONE / T-BONE STEAK</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">90.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">NYAMA CHOMA 1KG / 1KG GOAT</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">180.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">NYAMA CHOMA 1/2KG / 1/2KG GOAT</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">90.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="goat">NOS CHÈVRES / GOAT</th>
-						</tr>
-						<tr>
-							<td rowspan="4"><img src="images/beef.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">PATTE DE CHÈVRE (PAIRE) / GOAT LEG (PAIR)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">150.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">PATTE DE CHÈVRE (PIECE) / GOAT LEG (SINGLE)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">RAGOUT DE CHÈVRE / GOAT STEW</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">MCHOPO SPECIAL/MCHOPO</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="rabbit">NOS LAPINS / RABBIT</th>
-						</tr>
-						<tr>
-							<td rowspan="3"><img src="images/beef.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">1 LAPIN ENTIER / 1 WHOLE RABBIT</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">130.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">1/2 LAPIN / 1/2 RABBIT</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">1/4 LAPIN / 1/4 RABBIT</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">45.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-
-						<tr>
-							<th colspan="2" id="speciality">THAI MENU</th>
-						</tr>
-						<tr>
-							<td rowspan="7"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POULET|BOEUF|PORC AU CURRY ROUGE|JAUNE|VERT / CHICKEN|BEEF|PORK CURRY RED|YELLOW|GREEN (CURRY, BASILIC, EAU CHAUDE, LAIT DE CACAO / CURRY, BASIL, HOT WATER, COCOA MILK)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">90.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">RIZ SAUTÉ AVEC PORC|POULET|BOEUF / FRIED RICE WITH PORK|CHICKEN|BEEF (CARROTE, EAU CHAUDE, OIGNON ROUGE, POIRREAUX, OEUF, SAUCE DE SOJA / CARROT, HOT WATER, RED ONION, LEEKS, EGG, SOY SAUCE)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">RIZ SAUTÉ AU POULET AVEC ANANAS / CHICKEN FRIED RICE WITH PINEAPPLE (POULET, CARROTE, EAU CHAUDE, OIGNON ROUGE, POIRREAUX, ANANAS, OEUF, SAUCE DE SOJA, CURRY / CHICKEN, CARROT, HOT WATER, RED ONION, LEEKS, PINEAPPLE, EGG, SOY SAUCE, CURRY)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">85.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">NOUILLES SAUTÉES AU PORC|POULET|BOEUF|CREVETTES / STIR-FRIED NOODLES WITH PORK, CHICKEN, BEEF, AND SHRIMP (OEUF, EAU CHAUDE, SAUCE DE SOJA, CHOUX, CHILI, CITRON / EGG, HOT WATER, SOY SAUCE, CABBAGE, CHILI, LEMON)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">90.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">BOEUF THAI MANGUE BASILIC / THAI BEEF MANGO BASIL (OIGNON, POIRREAUX, GINGEMBRE, MANGUE, BASILIC, POIVRON / ONION, LEEKS, GINGER, MANGO, BASIL, PEPPER)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">85.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">WOK DE POULET AU LÉGUMES CROQUANT À LA CITRONNELLE / CHICKEN WOK WITH CRUNCHY LEMONGRASS VEGETABLES (POULET, LEGUMES, SESAME, CITRONNELLE, OIGNON, POIVRE / CHICKEN, VEGETABLES, SESAME, LEMONGRASS, ONION, PEPPER)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">FILET DE CAPITAINE GINGEMBRE AU LAIT DE CACAO / CAPTAIN GINGER FILLET WITH COCOA MILK (GINGEMBRE, CURRY ROUGE, OIGNON ROUGE, SAUCE DE POISSON, CREME, LAIT DE CACAO / GINGER, RED CURRY, RED ONION, FISH SAUCE, CREAM, COCOA MILK)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">90.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-
-						<tr>
-							<th colspan="2">EDEN GARDEN SPECIALITY</th>
-						</tr>
-						<tr>
-							<td rowspan="3"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">VIANDE CRAM-DECKER / CRAM-DECKER MEAT (CRÈME, FROMAGE, CÔTES LEVÉES, TOMATE EN DÉS, OIGNON, SAUCE BBQ, GARNIE DE SAUCE DÉBONNAIRS, CHEDDAR ET MOZARELLA / CREAM, CHEESE, SPARE RIB, DICED TOMATO, ONION, BBQ SAUCE, TOPPED WITH DEBONNAIRS SAUCE, CHEDDAR & MOZARELLA)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">VIANDE TRIPLE-DECKER / TRIPLE-DECKER MEAT (FROMAGE, JAMBON, CÔTES LEVÉES, TOMATE EN DÉS, OIGNON, SAUCE BBQ, GARNIE DE SAUCE DÉBONNAIRS, CHEDDAR ET MOZARELLA / CHEESE, HAM, SPARE RIB, DICED TOMATO, ONION, BBQ SAUCE, TOPPED WITH DEBONNAIRS SAUCE, CHEDDAR & MOZARELLA)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">150.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POULET CREMEUX TRIPLE DECKER / CREAMY CHICKEN TRIPLE DECKER (FROMAGE, POULET, JAMBON, CÔTES LEVÉES, TOMATES EN DÉS, OIGNONS, SAUCE BBQ, GARNIES DE SAUCE DÉBONNAIRS, CHEDDAR ET MOZARELLA / CHEESE, CHICKEN, HAM, SPARE RIB, DICED TOMATO, ONION, BBQ SAUCE, TOPPED WITH DEBONNAIRS SAUCE, CHEDDAR & MOZARELLA)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">150.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-
-						<tr>
-							<th colspan="2">NOS PORTIONS</th>
-						</tr>
-						<tr>
-							<td rowspan="12"><img src="images/fries.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POMMES|BANANES FRITES / POTATOES|BANANAS FRIES</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">18.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SAUCE PROVANCALE/CRÈME AUX CHAMPIGNONS / PROVANCALE/MUSHROOM CREAM SAUCE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POMMES NATURES /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POMMES SAUTÉES AUX OIGNONS / SAUTÉED POTATOES WITH ONIONS</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">RIZ BLANC / WHITE RICE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">PÂTE DE MANIOC|MAÏS|BLÉ / CASSAVA|CORN|WHEAT PASTE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CHAPATI /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">RIZ AUX LÉGUMES / VEGETABLES RICE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">POMME CHEMISE / JACKET POTATO</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">BANANE PLANTAINS / PLANTAINS</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">LÉGUMES MIXTES / MIXED VEGETABLES</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">EPINARD / SPINACH</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">18.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="dessert">NOS DESSERTS</th>
-						</tr>
-						<tr>
-							<td rowspan="7"><img src="images/breakfast2.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SALADE DE FRUIT / FRUIT SALAD</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">ASSIETTE DE FRUIT DE SAISON / SEASONAL FRUIT PLATE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CREPE /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CREPE(MIEL,CHOCOLAT) / CREPE (HONEY, CHOCOLATE)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CREME GLACÉE(BOULE) / ICE CREAM(SCOOP)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">GATEAU AU CHOCOLAT / CHOCOLATE CAKE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">GÂTEAU À LA VANILLE / VANILLA CAKE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="coffee">NOS CAFÉS / COFFEE</th>
-						</tr>
-						<tr>
-							<td rowspan="18"><img src="images/coffee.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">ESPRESSO SIMPLE / SIMPLE ESPRESSO</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">10.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CAFÉ AMERICANO / AMERICANO COFFEE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CAFÉ ORIENTAL /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CAFÉ NOIR / BLACK COFFEE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">10.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">ESPRESSO MACHIATO / MACHIATO ESPRESSO</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CAFÉ AU LAIT / COFFEE WITH MILK</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">18.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CAFÉ AFRICAIN / AFRICAN COFFEE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">LATTE GLACÉ /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">18.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CAFÉ FLAPPÉ / ICE COFFEE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">12.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">ESPRESSO DOUBLE / DOUBLE ESPRESSO</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CAPPUCCINO/</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">18.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">FRAPPUCCINO/</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">18.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CAPPUCCINO DOUBLE/ DOUBLE CAPPUCCINO</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">MACHACCINO/</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CAFÉ LATTE / LATTE COFFEE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">18.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CAFÉ MOCHA / MOCHA COFFEE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">AFFOGUATTO /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">MOCHA GLACÉ /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2">NOS THÉS / TEA</th>
-						</tr>
-						<tr>
-							<td rowspan="13"><img src="images/tea.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">THÉ NORMAL / NORMAL TEA</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">10.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">THÉ AU LAIT / TEA WITH MILK</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">18.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">THÉ RUSSE NOIR / RUSSIAN TEA</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">THÉ AFRICAIN / AFRICAN TEA</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">22.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">THÉ GINGEMBRE / GINGER TEA</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">THÉ DAWA / DAWA TEA</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">THÉ RUSSE AU LAIT / RUSSIAN TEA WITH MILK</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">18.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">TISANE / TISANE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">LAIT FRAIS / FRESH MILK</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CHOCOLAT CHAUD / HOT CHOCOLATE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">THÉ MASALA / MASALA TEA(INDIAN TEA)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">THÉ VERT / GREEN TEA</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="juice">NOS JUS FRAIS / FRESH JUICE</th>
-						</tr>
-						<tr>
-							<td rowspan="14"><img src="images/juice.jpg" width="150"><br><br><img src="images/smoothie.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">JUS DE CITRON / LEMON JUICE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">JUS D'ANANAS / PINEAPPLE JUICE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">JUS D'ORANGE / ORANGE JUICE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">22.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">JUS DE PASTEQUE / WATERMELON JUICE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">JUS DE PASSION / PASSION JUICE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">22.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">JUS MAISON / EDEN GARDEN JUICE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">JUS DE MANGE / EDEN GARDEN JUICE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">JUS COCKTAIL / COCKTAIL JUICE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">TANGO MANGO /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">PASSION GRENADINE /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">KING EDEN GARDEN /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">JUS DE POMME / APPLE JUICE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SMOOTHIE ROUGE / RED SMOOTHIE</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">MILK-SHAKE /</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-					</table>
+    <tr>
+        <td>Boissons Chaudes</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Cafés</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Espresso Macchiato/Macchiato Espresso</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Café Moccha/Moccha Coffee</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Café Au Lait/Coffee With Milk</td>
+        <td> 18,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Café Africain/African Coffee</td>
+        <td> 18,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Espresson Double/Double Espresso</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Café Latte/Latte Coffee</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Café Frappe/Iced Coffee</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Cappuccino/Cappuccino</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Frappuccino/Frappuccino</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Café Macchiato/Macchiato Coffee</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Café Noir/Black Coffee</td>
+        <td> 10,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Espresso Simple/Simple Espresso</td>
+        <td> 10,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Thés</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thé Africain/African Tea</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thé Dawa/Dawa Tea</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Tisane/Tisane</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Lait Frais/Fresh Milk</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chocolat Chaud/Hot Chocolate</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thé Indien/Indian Tea</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thé Vert/Green Tea</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thé Au Lait/Tea With Milk</td>
+        <td> 18,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thé Russe/Russian Tea</td>
+        <td> 18,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thé Noir/Black Tea…</td>
+        <td> 10,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Boissons Fresh Froides/Ours Colds Drinks</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jus De Mangue/Mango Juice</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jus Maison/Eden Garden Juice</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jus Cocktail/Cocktail Juice</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jus De Pomme/Apple Juice</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Milk Shake/Milk Shake</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Smoothie/Smoothie</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jus D’orange/Orange Juice</td>
+        <td> 22,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jus De Passion/Passion Juice</td>
+        <td> 22,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jus D’ananas/Pineapple Juice</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jus De Pasteque/Watermelon Juice</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jus De Citron/Lemon Juice</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Amuses Bouches/Our Appetizers</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Assiette De Fromage/Cheese Plate</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Ailes De Poulet/Chicken Wings</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Samoussa De Boeuf Ou Legumes/Beef Or Veggie  Samossa</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gateau de poisson/fish cake</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Assiette De Ndagala/Ndagala Plate</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Batonnet De Poisson/Fish Stick</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Rouleau De Pritemp Au Poulet Ou Legume/Spring Roll With Chicken Or Veg</td>
+        <td> 60,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Assiette Eden Garden/Eden Garden Plate</td>
+        <td> 100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Entrées Chaudes/ Hot Starters </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thai Soupe De Poulet Au Lait De Cacao/ Thai Chicken Soup With Cocoa Milk</td>
+        <td> 60,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thai Soupe De Bœuf / Thai Beef Soup</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thai Soupe De Porc  /  Thai Pork Soup (Choix Du Curry : Rouge, Jaune Ou Vert  Pour Les Thai Svp)</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Soupe De Poisson/Fish Soup</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Soupe De Courge/Squash Soup</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Soupe De Légume/Vegetables Soup</td>
+        <td> 25,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Soupe De Carottes/Carrot Soup</td>
+        <td> 25,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Soupe De Carottes Et Gingembre/Carrot Soup And Ginger</td>
+        <td> 30,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Soupe De Tomate/Tomato Soup</td>
+        <td> 25,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gateau au poisson/fish cake</td>
+        <td> 40,000.00 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Entrées Froides/Colds Starters </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Salade Du Chef/Chef’s Salad</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Salade César Au Poulet/Chicken Cesar Salad</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Salade Grecque/Greek Salad</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Salade Mixte/Mixed Salad</td>
+        <td> 30,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Salade César /Cesar Salad</td>
+        <td> 30,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Avocat Vinaigrette/Avocado Vinaigrette</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Viandes Blanches/Our White Meats </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Poulet</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Poulet Sénégalais Entier/Whole Senegalese Chicken</td>
+        <td> 200,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Poulet Grille Entier/Whole Grilled Chicken</td>
+        <td> 170,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1/2 Poulet Sénégalais/1/2 Senegalese Chicken</td>
+        <td> 120,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Cordon Bleu Au Poulet/Chicken Cordon Bleu</td>
+        <td> 120,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Escalope De Poulet/Chicken Cutlet</td>
+        <td> 100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1/2 Poulet Grille/1/2grilled Chicken</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Poulet Kfc/Kfc Chicken</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Emince De Poulet Aux Legumes/Veggie Sliced Chicken</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Poulet Au Curry/Chicken Curry</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Blanc De Poulet Barbecue/Barbecue Chicken Breast</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thai Riz Saute Au Poulet /Fried Rice With Chicken</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1/4 Poulet Grille/1/4 Grilled Chicken</td>
+        <td> 70,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Brochette De Poulet/Chicken Skewer</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Porcs/Porks </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Côte De Porc Caramélisée/Caramelized Pork Chop</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Filet De Porc/Porc Filet</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Côtelette De Porc Sauce Au Choix/Pork Chop With Sauce Or Your Choice</td>
+        <td> 85,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Côte De Porc A L’ananas/Pork Chop With Pineapple</td>
+        <td> 85,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Côtelette De Porc Grillé/Grilled Pork Chop</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thai Riz Saute Au Porc / Thai Fried Pork Rice</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Lapins/Rabbit </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Lapin Entier Grille/Whole Grilled Rabbit</td>
+        <td> 130,000.00 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1/2 Lapin Grille/1/2 Grilled Rabbit</td>
+        <td> 70,000.00 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1/4 Lapin Grille/1/4 Grilled Rabbit</td>
+        <td> 45,000.00 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Viandes Rouges/Our Red Meats</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Boeuf/Beef </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Filet De Boeuf Grille/Grilled Beef Filet</td>
+        <td> 75,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Steak T-Bone/T-Bone Steak</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Filet De Boeuf Sauce Au Choix/Grilled Beef Filet With Choice of Sauce</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Riz Sauté Aux Legumes et Boeuf/Fried Rice with Beef and Vegetables</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thai Riz Sauté Au Boeuf/ Thai Beef Fried Rice</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Medaillon De Boeuf/Beef Medallion</td>
+        <td> 75,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Emince De Boeuf/Sliced Beef</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Brochette De Boeuf/Beef Skewer</td>
+        <td> 75,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>filet de boeuf sizzling/sizzling beef filet</td>
+        <td> 100,000.00 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chèvre/Goat </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Patte De Chèvre (Paire)/Goat Leg (Paire)</td>
+        <td> 170,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Michopo Spécial/Special Michopo</td>
+        <td> 100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Patte De Chèvre (Pièce)/Goat Leg  (Piece)</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Ragout De Chèvre/Goat Stew</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Brochette De Chèvre/Goat Skewer</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Poissons/Our Fish </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Filet De Capitaine Grillé/Grilled Capitain Fillet</td>
+        <td> 85,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Kuhe Entier Grand/Whole Kuhe Large</td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Kuhe Entier Moyen/Whole Kuhe Medium</td>
+        <td> 350,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Kuhe Entier Petit/Whole Kuhe Small</td>
+        <td> 250,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Mukeke Désossé/Boneless Mukeke</td>
+        <td> 110,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Filet De Sangala Gratiné/Sangala Fillet Gratin</td>
+        <td> 100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Filet De Sangala En  Papillote/Sangala Fillet In Papillote</td>
+        <td> 100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Filet De Poisson Nature Avec Pommes De Terre Ou Bananes Vertes</td>
+        <td> 100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Mukeke Entier/Whole Mukeke</td>
+        <td> 100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Filet De Capitaine Sauce Au Choix/Capitain Fillet With Choice Of Sauce</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Filet De Sangala Sauce Au Choix/Sangala Fillet With Choice Of Sauce</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Brochette De Poisson/Fish Skewer</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Filet Inonzi/Inonzi Fillet</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thai Filet De Capitaine Au Gingembre Et Lait De Cacao/Capitaine Ginger Fillet With Cacao Milk</td>
+        <td> 100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Filet De Sangala Grillé/Grilled Sangala Fillet</td>
+        <td> 85,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Emince De Sangala/Sangala Sliced</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>filet de poisson sizzling/sizzling fish filet</td>
+        <td> 100,000.00 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Fruits De Mer/Sea Foods</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Steak De Saumon/Salmon Steak</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Langouste Grillé Au Beurre Percile/Grilled Lobster With Parsley Butter</td>
+        <td> 180,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Crevette A L’ail Et Jus De Citron/Shrimp With Garlic And Lemon Juice</td>
+        <td> 150,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Calamar Au Beurre Et Jus De Citron/Squid With Butter And Lemon Juice</td>
+        <td> 150,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Salade De Saumon Fumé/Smoked Salmon Salad</td>
+        <td> 120,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Pates/ Our Pastas</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thai Nouilles sautés Aux Crevettes/S Tir-Fried Shrimp Noodles</td>
+        <td> 150,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Spaghetti Au Saumon Fumeé/Spaghetti With Smoked Salmon</td>
+        <td> 100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thai Nouilles Sautés /Stir-Fried Noodles</td>
+        <td> 90,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Spaghetti Au Poulet  Sauce Au Choix/Spaghetti With Chicken Choice Of Sauce</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Lasagne De Bœuf Ou Aux Legumes/Beef Or Vegetables Lasagne</td>
+        <td> 70,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Spaghetti Carbonara/Spaghetti Carbonara</td>
+        <td> 60,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Spaghetti Bolognaise/Spaghetti Bolognese</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Spaghetti Aux Légumes/Spaghetti With Vegetables</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Pizzas/Our Pizzas</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pizza Eden Garden(Sauce Tomate, Poulet, Champignon, Saucisson, Olive Noir, Jambon, Oignon, Viande Hachée Et Fromage)</td>
+        <td> 100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pizza Tikka Au Poulet/Chicken Tikka Pizza(Sauce Tikka, Poulet, Champignon, Jambon, Oignon, Poivron, Saucisson Et Fromage Mozzarella)</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pizza Kila Kitu(Proposition Du Chef)</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pizza 4 Saisons/ Four Saisons Pizza(Sauce Tomate, champignon, saicisson, jambon et poulet)</td>
+        <td> 80,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pizza Mafioso(Sauce Tomate, Jambon, Champignon, Oignon Et Fromage) </td>
+        <td> 70,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pizza Au Poulet  Et Champignon(Sauce Tomate, Poulet, Champignon, Oignon Et Poivron, Et Fromage)</td>
+        <td> 70,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pizza Au Thon/Tuna Pizza(Sauce Tomate, Thon, Oignon Et Fromage)</td>
+        <td> 70,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pizza Fiesta Mexicaine(Sauce Tomate, Oignon, Poivron, Viande Hachée Et Fromage)</td>
+        <td> 70,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pizza Steak De Boeuf Et Champignon(Sauce Tomate, Champignon, Oignon, Poivron Et Steak)</td>
+        <td> 70,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pizza Tropicana Chicken(Sweet Chili Sauce, Ananas, Poivron, Poulet Et Fromage)</td>
+        <td> 70,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pizza Hawaïen/Hawaien Pizza(Sauce Tomate, Ananas Et Jambon)</td>
+        <td> 60,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pizza Végétarienne/Vegetables Pizza(Sauce Tomate, Oignons, Champignon, Courgette, Sweet Corn, Poivron, Olive Noir Et Tomate)</td>
+        <td> 60,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pizza Marguerite/Margherita Pizza(Sauce Tomate, Basilic Et Fromage Mozzarella)</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Specialites Eden Garden/Eden Garden Speciality</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Planche Mixte De Viandes/Mixt Meats Plate(1/2 Poulet, 1/2 Kg Porc, 1/2 Lapin, 1/2 Patte De chèvre)</td>
+        <td> 400,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Planche Viande Rouge 4pax/Red Meat Plate(1 Kg Steak De Bœuf, 1 Patte De Chèvre)</td>
+        <td> 250,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Planche Viande Blanche/White Meat Plate(1/2 Poulet, 1/2 Kg Porc, 1/2 Lapin)</td>
+        <td> 250,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1/2 Planche Viande Rouge/1/2 Red Meat Plate(1/2 Kg Steak De Bœuf ,1/2 Patte De Chèvre)</td>
+        <td> 150,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1/2 Planche Viande Blanche/1/2 White Meat Plate(1/4 Poulet, 1/4 Kg Porc Et 1/4 Lapin)</td>
+        <td> 150,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Accompagnements En Portion</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pomme Chemise/Jacket Potatoes</td>
+        <td> 25,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pommes Ou Bananes Sautées Aux Oignons</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Bananes Plantains/Plantains</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Riz Aux Légumes/Vegetables Rice</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pommes Ou Bananes Frite/Potatoes Or Bananas Fries</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pommes Ou Bananes Nature</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Riz Blancs/White Rice</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Foufou (Mais, Manioc, Blé, Sorgho)</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chapati</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Legumes Par Portion</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Epinards/Spinach</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Petit Pois Avec Carottes Et Oignons</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Légumes Mixtes/Mixt Vegetables</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Haricot Frais/Fresh Beans</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Lenga Lenga</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Sauces En Portion</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Sauce Champignon Crème/Mushroom Creme Sauce</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Sauce Bolognaise/Bolognaise Sauce</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Sauce Champignon Nature/Mushroom Plane Sauce</td>
+        <td> 18,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Sauce Provencale</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Desserts</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Tarte Aux Fruits 8 Personnes</td>
+        <td> 270,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Crêpe A La Comédie Francaise</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chocolat Fondant/Fondant Chocolate</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chocolat Brownie/Chocolate Brownie</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Dame Blanche/Dame Blanche</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Tiramisu/Tiramisu</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Mini Tarte Aux Fruits Ou Au Citron</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Crêpe Flambee</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Carre De Gâteau A La Vanille/Square Of Vanilla Cake</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Mousse Au Chocolat/Chocolate Mousse</td>
+        <td> 30,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Tranche Des Fruits/Fruits Slices Plate</td>
+        <td> 25,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Salade De Fruits De Saison/Saisonna Fruit Salad</td>
+        <td> 25,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Crêpe Nature</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pomme Fruit Frais/Apple Fresh Fruit</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Commandes Pâtisserie Et Boulangerie Eden Garden 24h Avant La Livraison</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gâteau 8 Personnes</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Tarte Aux Fruits Ou Au Citron 8 Personnes</td>
+        <td> 270,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Mini Tartes Aux Fruits</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pain Carré Eden Garden</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Croissant Eden Garden</td>
+        <td> 12,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pain Chocolat Eden Garden</td>
+        <td> 8,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pain Baguette Eden Garden</td>
+        <td> 5,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pain Hamburger Eden Garden</td>
+        <td> 5,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pain Rond Gris Eden Garden</td>
+        <td> 3,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pain Rond Blanc Eden Garden</td>
+        <td> 2,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script>
+		(function () {
+			const table = document.querySelector(".food-menu .menu-body table");
+			if (!table) return;
+
+			const rows = Array.from(table.querySelectorAll("tr"));
+			const hasDigit = (value) => /\d/.test(value);
+			const normalize = (value) => value.replace(/\s+/g, " ").trim();
+			const normalizeKey = (value) =>
+				normalize(value)
+					.toLowerCase()
+					.normalize("NFD")
+					.replace(/[\u0300-\u036f]/g, "");
+			const hasImage = (html) => /<img\b/i.test(html || "");
+			const cleanTitle = (value) =>
+				normalize(value)
+					.replace(/\s*\/?\s*(godet|bouteille)\s*(\/\s*(godet|bouteille)\s*)*/gi, "")
+					.replace(/\s*\/\s*$/, "")
+					.trim();
+			const formatPrice = (prices) => {
+				if (!prices.length) return "";
+				const joined = prices.join(" / ");
+				return /fbu$/i.test(joined) ? joined : `${joined} FBU`;
+			};
+			const titleAnchorRules = [
+				{ test: /entrees?\s+chaudes?|hot\s+starters?/, id: "hotstarters" },
+				{ test: /entrees?\s+froides?|colds?\s+starters?/, id: "coldstarters" },
+				{ test: /africains?|local\s+delicacy/, id: "localdelicacy" },
+				{ test: /tapas|amuses?\s+bouches?/, id: "tapas" },
+				{ test: /pates?|pasta|pizza|pizzeria/, id: "pastas" },
+				{ test: /sandwich|burger|omelette/, id: "sandwich" },
+				{ test: /porcs?|porks?|fruits?\s+de\s+mer|sea\s+foods?/, id: "pork" },
+				{ test: /poissons?|fish|poulet|chicken/, id: "fish" },
+				{ test: /chevre|goat|boeuf|b[œo]uf|beef/, id: "beef" },
+				{ test: /lapins?|rabbit/, id: "rabbit" },
+				{ test: /specialite|eden\s+garden\s+speciality/, id: "speciality" },
+				{ test: /desserts?|portions?/, id: "dessert" },
+				{ test: /cafes?|coffee|thes?|tea|boissons?\s+chaudes?/, id: "coffee" },
+				{ test: /jus\s+frais|fresh\s+juices?|milkshakes?|smoothies?/, id: "juice" },
+			];
+
+			rows.forEach((row) => {
+				const cells = Array.from(row.querySelectorAll("td"));
+				if (!cells.length) return;
+
+				const cellData = cells.map((td) => ({
+					text: normalize(td.textContent || ""),
+					html: td.innerHTML.trim(),
+				}));
+
+				const nonEmpty = cellData
+					.map((cell, index) => ({ ...cell, index }))
+					.filter((cell) => cell.text.length > 0 && !hasImage(cell.html));
+
+				if (!nonEmpty.length) {
+					row.remove();
+					return;
+				}
+
+				const firstCell = nonEmpty[0];
+				const firstKey = normalizeKey(cleanTitle(firstCell.text));
+				const priceValues = nonEmpty
+					.slice(1)
+					.map((cell) => cell.text)
+					.filter((text) => hasDigit(text));
+
+				const titleLike =
+					nonEmpty.length === 1 ||
+					(!priceValues.length &&
+						/(nos|entrees?|plats?|amuses?|pates?|sandwich|burgers?|omelettes?|porcs?|sea\s+foods?|poissons?|poulet|chevre|boeuf|b[œo]uf|lapins?|specialite|desserts?|cafes?|thes?|jus)/i.test(
+							firstKey
+						));
+
+				row.innerHTML = "";
+
+				if (titleLike) {
+					const td = document.createElement("td");
+					td.className = "section-title";
+					td.colSpan = 2;
+					const existingAnchor = cells[0].querySelector(".menu-anchor");
+					if (existingAnchor) {
+						td.appendChild(existingAnchor.cloneNode(true));
+					}
+					const matchedRule = titleAnchorRules.find((rule) =>
+						rule.test.test(firstKey)
+					);
+					if (matchedRule) {
+						const span = document.createElement("span");
+						span.id = matchedRule.id;
+						span.className = "menu-anchor";
+						td.appendChild(span);
+					}
+					td.appendChild(document.createTextNode(cleanTitle(firstCell.text)));
+					row.appendChild(td);
+					return;
+				}
+
+				if (!priceValues.length) {
+					row.remove();
+					return;
+				}
+
+				const nameTd = document.createElement("td");
+				nameTd.className = "item-name";
+				nameTd.innerHTML = firstCell.html;
+
+				const priceTd = document.createElement("td");
+				priceTd.className = "item-price";
+				priceTd.textContent = formatPrice(priceValues);
+
+				row.appendChild(nameTd);
+				row.appendChild(priceTd);
+			});
+		})();
+	</script>
 </body>
 </html>

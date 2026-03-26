@@ -20,13 +20,78 @@
 		.back-link:hover {
 			background-color: #035d6b;
 		}
+		.food-menu-title {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+			gap: 8px;
+			padding: 12px;
+			margin: 10px 0;
+		}
+		.food-menu-title a {
+			display: block;
+			border: 1px solid rgba(255, 255, 255, 0.25);
+			border-radius: 10px;
+		}
+		.food-menu-title h3 {
+			margin: 0;
+			padding: 10px 8px;
+			font-size: clamp(12px, 1.7vw, 14px);
+			line-height: 1.3;
+		}
+		.menu-anchor {
+			display: block;
+			scroll-margin-top: 12px;
+		}
+		html {
+			scroll-behavior: smooth;
+		}
+		.food-menu .menu-body table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+		.food-menu .menu-body td {
+			padding: 12px 10px;
+			vertical-align: middle;
+		}
+		.food-menu .menu-body td.item-name {
+			width: 68%;
+			font-weight: 500;
+		}
+		.food-menu .menu-body td.item-price {
+			width: 32%;
+			text-align: right;
+			font-weight: 700;
+			color: #027789;
+			white-space: nowrap;
+		}
+		.food-menu .menu-body td.section-title {
+			background: #f4f7f8;
+			color: #027789;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 0.3px;
+		}
+		@media (max-width: 768px) {
+			.food-menu .menu-body td,
+			.food-menu .menu-body th {
+				display: table-cell !important;
+				width: auto !important;
+			}
+			.food-menu .menu-body td {
+				padding: 10px 8px;
+				font-size: 14px;
+			}
+			.food-menu .menu-body td.item-price {
+				font-size: 13px;
+			}
+		}
 	</style>
 </head>
 <body>
 	<a href="index.html" class="back-link">← Retour / Back</a>
 	<div>
 		<div class="food-menu-title">
-			<br><br>
 			<a href="#beers">
 				<div>
 					<h3>NOS BIERRES / BEERS</h3>
@@ -59,7 +124,7 @@
 			</a>
 			<a href="#vinroses">
 				<div>
-					<h3>NOS VINS ROSES</h3>
+					<h3>NOS VINS ROSES / ROSE WINES</h3>
 				</div>
 			</a>
 			<a href="#redwines">
@@ -69,7 +134,7 @@
 			</a>
 			<a href="#sparklingwines">
 				<div>
-					<h3>NOS VINS MOUSSEUX / SPARLKLING WINES</h3>
+					<h3>NOS VINS MOUSSEUX / SPARKLING WINES</h3>
 				</div>
 			</a>
 			<a href="#freealcohol">
@@ -84,1790 +149,2172 @@
 			</a>
 			<a href="#aperitifs">
 				<div>
-					<h3>NOS APERITIFS /</h3>
+					<h3>NOS APERITIFS / APERITIFS</h3>
 				</div>
 			</a>
 			<a href="#rhums">
 				<div>
-					<h3>NOS RHUMS / </h3>
+					<h3>NOS RHUMS / RUMS</h3>
 				</div>
 			</a>
 			<a href="#liqueurs">
 				<div>
-					<h3>NOS LIQUEURS / </h3>
+					<h3>NOS LIQUEURS / LIQUEURS</h3>
 				</div>
 			</a>
 			<a href="#vodka">
 				<div>
-					<h3>NOS VODKA / </h3>
+					<h3>NOS VODKAS / VODKAS</h3>
 				</div>
 			</a>
 			<a href="#gin">
 				<div>
-					<h3>NOS GIN / </h3>
+					<h3>NOS GINS / GINS</h3>
 				</div>
 			</a>
 			<a href="#tequila">
 				<div>
-					<h3>NOS TEQUILA / </h3>
+					<h3>NOS TEQUILAS / TEQUILAS</h3>
 				</div>
 			</a>
 			<a href="#cognac">
 				<div>
-					<h3>NOS COGNAC / </h3>
+					<h3>NOS COGNACS / COGNACS</h3>
 				</div>
 			</a>
 			<a href="#whisky">
 				<div>
-					<h3>NOS WHISKY / </h3>
+					<h3>NOS WHISKIES / WHISKIES</h3>
 				</div>
 			</a>
 			<a href="#singlemalt">
 				<div>
-					<h3>NOS SINGLE MALT / </h3>
+					<h3>NOS SINGLE MALT / SINGLE MALTS</h3>
 				</div>
 			</a>
 			<a href="#cocktails">
 				<div>
-					<h3>NOS COCKTAILS / </h3>
+					<h3>NOS COCKTAILS / COCKTAILS</h3>
 				</div>
-			</a><br><br>
+			</a>
 		</div>
 		<div class="food-menu">
 			<div class="menu-body">
 					<table>
-						<tr>
-							<th colspan="2" id="beers">NOS BIERRES / BEERS</th>
-						</tr>
-						<tr>
-							<td rowspan="21"> <img src="images/beers.jpg" width="150"><br><br> <img src="images/leffe.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Amstel - 65cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Amstel - 50cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">10.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Amstel Bock - 33cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Amstel Royale - 50cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Amstel Bright 65cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">12.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Amstel Bright 50cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">10.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Primus - 72cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Primus - 50cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">10.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Soma Burundi - 50cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">8.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Heineken - 65cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">40.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Heineken - 33cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Smirnoff Ice Bouteille - 30cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Smirnoff Ice Canette - 25cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Leffe - 33cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">22.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Stella Artois - 33cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">22.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Serengeti Premium Lager - 33cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Tsingtao Premium Lager 33cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Gatao - 25cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Corona Extra 33cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Savana</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Buryohe</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">8.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="softdrinks">SANS ALCOOL / SOFT DRINKS</th>
-						</tr>
-						<tr>
-							<td> <img src="images/bavaria.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Bavaria sans Alcool - 50cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">18.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="energydrinks">NOS BOISSONS ENERGETIQUES / ENERGY DRINKS</th>
-						</tr>
-						<tr>
-							<td> <img src="images/bavaria.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Red Bull - 25cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="waters">NOS LIMONADES ET EAUX / LEMONADES AND WATERS</th>
-						</tr>
-						<tr>
-							<td rowspan="4"> <img src="images/beers.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Fanta - 30cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">10.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Eau Plate - 50cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">7.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Eau Vitalo - 30cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">7.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Eau Pétillante - 40cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">7.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="juice">NOS JUS / JUICE</th>
-						</tr>
-						<tr>
-							<td rowspan="2"> <img src="images/bavaria.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Fruito - 33cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">8.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Jus Passion - 33cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">7.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="whitewines">NOS VINS BLANCS / WHITE WINES</th>
-						</tr>
-						<tr>
-							<td rowspan="19"> <img src="images/whitewine.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Pouilly-Fuissé</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Pouilly-Fumé</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau Lespault Martillac 2020 Blanc</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">320.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau Rieussec Bordeaux Blanc 2016</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">350.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Les Clefs de Terre Dieu Chardonnay Blanc</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Terre des Anges Sauvignon Blanc 2021</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Cabochon du Sud Chardonnay 2022</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau Saint Michel Sauternes</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">370.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Calvet Chardonnay 2022 Blanc</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Calvet Cabernet Sauvignon Blanc</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Estandon Heritage</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Limoncello Antonia Maria</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Estandon Heritage</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Gatao - 75cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">120.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Château De Callac Prestige 2018</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Château Cantenac Margaux 2019</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Château Couhins Pessac 2021</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Château Du Glana 2018</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Château Des Collines 2018 Médoc</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="redwines">NOS VINS ROUGES / RED WINES</th>
-						</tr>
-						<tr>
-							<td rowspan="39"> <img src="images/redwine.jpg" width="150"><br><img src="images/redwine3.jpg" width="150"> </td>
-							<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Château haut pavarie 75 cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Château Bel-Air Bordeaux Supérieur 75 cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">B&G Merlot Reserve 75 cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Seigneurs de Ségur Lussac saint emilion-2021 75 cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Pinot Noir Bourgogne 2019 75 cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Château Bessan Ségur Médoc 2013 75 cl</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Calvet Cabernet Sauvignon Rouge</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Saint Chinian Rochet Mazet</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Maison Castel Pinot Noir Grande Réserve</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Porto</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">450.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau Haut Piquat Saint-Emilion Lussac 2019</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau Gaffelière Saint-Emilion Grand Cru 2018</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">320.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau Gruaud Larose 2006 Saint Julien Grand Cru</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">2.000.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau La Tour du Pin Saint-Emilion Grand Cru 2007</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">800.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau Larose 2016 Saint-Emilion Grand Cru</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">350.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau Pomone Saint-Emilion Grand Cru</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">360.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Domaine Bosquet Pinot Noir CRD IGP</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">370.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Clos des Menuts Saint-Emilion Grand Cru 2014</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Rochet Mazet Cabernet Sauvignon 2021</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">350.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Cotes du Rhône</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Salento Primitivo</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">350.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Primitivo di Manduria</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">280.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Fiole du Pape</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">700.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Amarone della Valpolicella 2013</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">600.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Amarone Zonin Della 2017</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">600.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Bottega Amarone della Valpolicella 2017</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">800.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Barton & Guestier Beaujolais</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Fugue de Nenin 2019</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">550.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau Cantenac Margaux 2019</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">350.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau de Brane Margaux 2018</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">350.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau La Tour Carnet 2019 Grand Cru</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">420.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Les Clefs de Terre Dieu Syrah Rouge</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau de Camensac Haut Médoc 2018</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">350.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chateau Potensac Médoc 2018</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">320.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Smirnoff Rouge</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">250.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Terre des Anges Cabernet Sauvignon Rouge 2022</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Terre Dieu Merlot Syrah Rouge</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Terre des Anges Merlot 2023</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="sparklingwines">NOS VINS MOUSSEUX / SPARLKLING WINES</th>
-						</tr>
-						<tr>
-							<td rowspan="6"><img src="images/redwine3.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Prosecco</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Freixenet</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Kraemer Brut</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Kraemer Demi-Sec</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Alita Chardonnay</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">250.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Alita Sweet</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">250.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2">NOS ZILLIKEN</th>
-						</tr>
-						<tr>
-							<td rowspan="6"><img src="images/redwine3.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Zilliken Elbling Trocken</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Zilliken Elbling Filius</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Riesling Mosel</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Zilliken Barrique (Spätburgunder)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Zilliken Dornfelder</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Zilliken Riesling Trocken</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="freealcohol">SANS ALCOOL / FREE ALCOHOL</th>
-						</tr>
-						<tr>
-							<td rowspan="4"><img src="images/redwine3.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Alita Livi</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">250.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Heaven Vin Blanc</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Heaven Vin Rouge</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">JC Le Roux</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">250.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="champagne">NOS CHAMPAGNES | CHAMPAGNE</th>
-						</tr>
-						<tr>
-							<td rowspan="14"><img src="images/perignon.jpg" width="150"><br><img src="images/moet.jpg" width="150"><br><img src="images/champagne.jpg" width="150"> </td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Champagne Brut Dom Pérignon</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">3.000.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Champagne Perrier-Jouët Blanc</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">1.200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Veuve Clicquot</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">1.200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Gimonnet Gonet/Champagne</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">1.000.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Moet & Chandon Ice</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">1.100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Moet & Chandon Impérial</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">1.000.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Moet & Chandon Nectar</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">1.100.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Ruinart Blanc</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">1.500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Laurent Perrier</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">1.000.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Comités</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">3.500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Grand Siècle</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">2.600.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Taittinger Millésime</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">1.200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Taittinger Cuvée Prestige</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">1.000.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Taittinger Nocturne</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">1.000.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="aperitifs">NOS APERITIFS /Godet/Bouteille </th>
-						</tr>
-						<tr>
-							<td rowspan="4"><img src="images/vodka.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Ricard</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000/400.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Martini Blanc</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000/400.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Martini Rouge</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000/450.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Campari</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000/400.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="rhums">NOS RHUMS / Godet/Bouteille</th>
-						</tr>
-						<tr>
-							<td rowspan="4"><img src="images/vodka.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Bacardi Carta Blanca</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000/450.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Bacardi Carta Oro</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000/450.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Soccaron</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">15.000/350.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Captain Morgan</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000/400.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="liqueurs">NOS LIQUEURS / Godet/Bouteille</th>
-						</tr>
-						<tr>
-							<td rowspan="5"><img src="images/vodka.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Amarula</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000/600.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Bailey's</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000/650.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Malibu</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000/500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Cointreau</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000/500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Triple Sec</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000/450.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="vodka">NOS VODKA / Godet/Bouteille</th>
-						</tr>
-						<tr>
-							<td rowspan="3"><img src="images/vodka.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Absolut Citron</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000/450.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Absolut Vanilia</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000/450.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Absolut Vodka</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000/450.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="tequila">NOS TEQUILA / Godet/Bouteille</th>
-						</tr>
-						<tr>
-							<td rowspan="2"><img src="images/vodka.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Tequila Camino</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000/500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Tequila Silver</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000/500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="cognac">NOS COGNAC / Godet/Bouteille</th>
-						</tr>
-						<tr>
-							<td rowspan="5"><img src="images/vodka.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Hennessy V.S.O.P</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">55.000/1.300.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Gloria V.S.O.P</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000/450.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Martell</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000/750.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Martell V.S.O.P</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">45.000/1.000.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Courvoisier Cognac V.S</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">25.000/750.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2">NOS GIN / </th>
-						</tr>
-						<tr>
-							<td rowspan="2"><img src="images/vodka.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Bombay Sapphire</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000/500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Gordon's London Dry Gin</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">20.000/500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="whisky">NOS WHISKY / Godet/Bouteille</th>
-						</tr>
-						<tr>
-							<td rowspan="14"><img src="images/goldlabel.jpg" width="150"><br><img src="images/jackdaniel.jpg" width="150"><br><img src="images/chivas.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Red Label</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000/650.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Gold Label Grand</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">50.000/900.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Gold Label Petit</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Black Label Grand</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000/750.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Black Label petit</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Double Black</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000/750.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Blue Label</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000/3.500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">J&B</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000/650.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Jack Daniel</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000/750.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chivas Regal 12 ans</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000/800.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chivas Regal 18 ans</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000/1.350.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Chivas Regal 25 ans</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">4.000.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Jameson</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000/650.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Jagermaster</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">30.000/650.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="singlemalt">NOS SINGLE MALT / Godet/Bouteille</th>
-						</tr>
-						<tr>
-							<td rowspan="3"><img src="images/glenfidich2.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Glenfiddich 12 ans</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000/900.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Glenfiddich 15 ans</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">45.000/1.200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">Glenfiddich 18 ans</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">60.000/1.500.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2" id="cocktails">NOS COCKTAILS / </th>
-						</tr>
-						<tr>
-							<td rowspan="23"><img src="images/cocktail1.jpg" width="150"><br><br><br><img src="images/cocktail2.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">TEQUILLA SUNRISE(camino,jus passion,citron,grenardine)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">50.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">CUBA LIBRE(rhum blanc,coca,jus de citron)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">40.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">LONG ISLAND(vodka,tequilla,gin,baccardi,triple sec,coca)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SEX ON THE BEACH(vodka,rhum,gin,jus de passion,grenardine)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">60.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">TEQUILLA SUNRISE(camino,jus passion,citron,grenardine)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">50.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">LEMON DROP(cointreau,vodka,jus de citron)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">55.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">WHISKY SOUR(scotch wisky,sus de citron,sucre) </span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">60.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">KAMIKAZE(vodka,cointreau,citron) </span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">55.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">ZOMBIE(rhum,cointreau,gin,jus passion)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">70.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">MARGARITA FROZEN A LA FRAISE(Tequilla,cointreau,fraise,citron)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">55.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">NEGRONIE(Campari,martini)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">45.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">COSMOPOLITAN(vodka stolichnaya,cointreau,citron,grenardine)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">45.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">PINACOLADA(rhum,jus,ananas)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">45.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">MEXICAN SUN SET(tequilla,triple sec,jus d'ananas,grenardine)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">50.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">WHITE RUSSIAN(vodka,kalhua,bailyes)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">60.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">BLACK RUSSIAN(vodka,khalua,creme de cassis)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">55.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">MOJITO(rhum,eau petillante,menthe,jus de citron,sucre)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">75.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">MARGARITA(Tequilla,cointreau,citron)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">55.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">B52(khalua,baileys,cointreau)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">JAGGER BOMB(jaggermeista,redbull)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">60.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">EDEN GARDEN COCKTAILS(campari,cointreau,gin:passion,grenardine)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">80.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SANGRIA ROUGE(Red wine,Rhum,Tequila,Triple sec)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">200.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th colspan="2">NOS COCKTAILS SANS ALCOOL/ </th>
-						</tr>
-						<tr>
-							<td rowspan="23"><img src="images/cocktail.jpg" width="150"></td>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">SWEET COCKTAILS(jus de marakuja,grenardine)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="menu-item">
-									<span class="menu-item-name">VIRGIN MOJITO(Eau petillante,sprite,menthe,jus de citron)</span>
-									<span class="menu-item-dots"></span>
-									<span class="menu-item-price">35.000 FBU</span>
-								</div>
-							</td>
-						</tr>
+						
+    <tr id="waters">
+        <td><span id="juice"></span>Limonades, Eaux Et Jus</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fanta 33cl</td>
+        <td> 10,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fruito 33cl</td>
+        <td> 10,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Eau Vitalo 33cl</td>
+        <td> 7,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Eau Pétillante 40cl</td>
+        <td> 7,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Eau Plate 50cl</td>
+        <td> 7,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jus Passion 33cl</td>
+        <td> 7,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="beers">
+        <td> Bières/Beers</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Heineken 33cl</td>
+        <td> 30,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Smirnoff Ice En Bouteille 30cl</td>
+        <td> 30,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Smirnoff Ice En Canette 25cl</td>
+        <td> 30,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gatao 25cl</td>
+        <td> 30,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Leffe Blonde Ou Brune 33cl</td>
+        <td> 25,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Stella Artois 33cl</td>
+        <td> 25,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Serengeti Premium Lager 33cl</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Tsingtao Premium Lager 33cl</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Corona Extra 33cl</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Savana</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pearl River Lager Beer</td>
+        <td> 20,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Amstel 65cl</td>
+        <td> 17,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Amstel Royale 50cl</td>
+        <td> 17,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Amstel Bock 33cl</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Primus 72cl</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Amstel Bright 65cl</td>
+        <td> 12,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Amstel 50cl</td>
+        <td> 10,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Amstel Bright 50cl</td>
+        <td> 10,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Primus 50cl</td>
+        <td> 10,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Soma Burundi 50cl</td>
+        <td> 10,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Basembe</td>
+        <td> 15,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Buryohe 50cl</td>
+        <td> 10,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="softdrinks">
+        <td><span id="energydrinks"></span>Sans Alcool Et Energetiques</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Red Bull 25cl</td>
+        <td> 22,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Bavaria En Canette50cl</td>
+        <td> 18,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="aperitifs">
+        <td>Nos Apperitifs</td>
+        <td>Godet</td>
+        <td>Bouteille</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Ricard</td>
+        <td> 25,000 </td>
+        <td> 400,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Campari</td>
+        <td> 25,000 </td>
+        <td> 400,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Martini Rouge Ou Blanc</td>
+        <td> 25,000 </td>
+        <td> 400,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Porto Rouge Ou Blanc</td>
+        <td> 25,000 </td>
+        <td> 400,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="rhums">
+        <td>Nos Rhums</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Bacardi Blanc</td>
+        <td> 25,000 </td>
+        <td> 400,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Captain Morgan</td>
+        <td> 25,000 </td>
+        <td> 400,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Socaro</td>
+        <td> 20,000 </td>
+        <td> 350,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="liqueurs">
+        <td>Nos Liqueurs</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Bailey’s</td>
+        <td> 35,000 </td>
+        <td> 600,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jagermeister</td>
+        <td> 30,000 </td>
+        <td> 550,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Amarula 1l</td>
+        <td> 30,000 </td>
+        <td> 550,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Malibu</td>
+        <td> 25,000 </td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Cointreau</td>
+        <td> 25,000 </td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Triple Sec</td>
+        <td> 25,000 </td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Creme De Cassis</td>
+        <td> 25,000 </td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="vodka">
+        <td>Nos Vodka</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Absolut Citron</td>
+        <td> 25,000 </td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Absolut Vodka</td>
+        <td> 25,000 </td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Stolichianay</td>
+        <td> 25,000 </td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Smirniff Rouge Ou Bleu</td>
+        <td> 25,000 </td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="gin">
+        <td>Nos Gins</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gin Gordon’s</td>
+        <td> 25,000 </td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Bombay Sapphire</td>
+        <td> 25,000 </td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="tequila">
+        <td>Tequila</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Tequila Camino</td>
+        <td> 25,000 </td>
+        <td> 400,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="whisky">
+        <td>Nos Whisky</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chivas Raegal 18ans</td>
+        <td> 70,000 </td>
+        <td> 1,350,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gold Label Johnnie Walker 1l</td>
+        <td> 50,000 </td>
+        <td> 900,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chivas Regal 12ans</td>
+        <td> 30,000 </td>
+        <td> 800,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Black Label Johnnie Walker</td>
+        <td> 30,000 </td>
+        <td> 750,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Double Black Johnnie Walker</td>
+        <td> 30,000 </td>
+        <td> 750,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jack Daniel’s</td>
+        <td> 30,000 </td>
+        <td> 750,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jack Daniel’s Honney</td>
+        <td></td>
+        <td> 750,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Red Label Johnnie Walker</td>
+        <td> 30,000 </td>
+        <td> 650,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>J&amp;B</td>
+        <td> 30,000 </td>
+        <td> 650,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jameson Irish Whisky</td>
+        <td> 30,000 </td>
+        <td> 650,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gold Label Johnnie Walker 20cl</td>
+        <td></td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="singlemalt">
+        <td>Nos Singles Malt</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Glenfiddich 18 Ans</td>
+        <td> 70,000 </td>
+        <td> 1,300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Glenfiddich 12 Ans</td>
+        <td> 45,000 </td>
+        <td> 800,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="cognac">
+        <td>Nos Cognacs</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Henessy Vsop</td>
+        <td> 70,000 </td>
+        <td> 1,300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Martel Vsop</td>
+        <td> 50,000 </td>
+        <td> 1,100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Henessy Vs</td>
+        <td> 45,000 </td>
+        <td> 800,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Remy Martin</td>
+        <td> 45,000 </td>
+        <td> 800,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Martel Vs</td>
+        <td> 40,000 </td>
+        <td> 750,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Courvoisier Vs</td>
+        <td> 40,000 </td>
+        <td> 750,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="whitewines">
+        <td>Vins Blancs/White Wines</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château De Callac Prestige 2018</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Couhins Pessac 2021</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Lespault Martillac 2020 Blanc</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Les Clefs De Terre Dieu Chardonnay Blanc</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Terre Des Anges Sauvignon Blanc 2021</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Terre Dieu Sauvignon Blanc</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Cabochon Du Sud Chardonnay 2022</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Calvet Chardonnay 2022 Blanc</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gatao - 75cl</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pierre Rivière Chardonnay</td>
+        <td> 250,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Verre De Vin Maison Blanc</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Vins Allemands / Germany Wines</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Zilliken Barrique (Spätburgunder)</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Zilliken Classic</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Zilliken Dornfelder</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Zilliken Elbling Filius</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Zilliken Elbling Trocken</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Zilliken Riesling Trocken</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Zilliken Roter Elbling Trocken</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="redwines">
+        <td>Vins Rouges/Red Wines</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Gruaud Larose 2006 Saint Julien Grand Cru</td>
+        <td> 2,000,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Haut Piquat Saint-Emilion Lussac 2006 - 75cl</td>
+        <td> 700,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fiole Du Pape</td>
+        <td> 700,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chateau La Tour Carnet rouge 2018</td>
+        <td> 700,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chateau Ormes de Pez 2011</td>
+        <td> 700,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chateau FRANC les CERISISERS Cotes de francs 2002</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chateau HAUT PIQUAT Lussac Saint Emillion 2006</td>
+        <td> 700,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chateau HAUT PIQUAT Lussac Saint Emillion 2008</td>
+        <td> 600,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chateau HAUT PIQUAT Lussac Saint Emillion 2010</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chateau HAUT PIQUAT Lussac Saint Emillion 2009</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>La FLEUR de chateau HAUT PIQUAT Lussac Saint Emillion 2016</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Chateau de CALLAC Prestige 2018</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fugue De Nenin 2019</td>
+        <td> 550,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Haut Piquat Saint-Emilion Lussac 2019</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Seigneurs De Ségur  Lussac Saint-Emillion - 2021</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Bessan Ségur Médoc 2013</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Bourgogne Pinot Noir 2019</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Cantenac Margaux 2019</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Du Glana 2018</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Des Collines 2018 Médoc</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Carbonieux Grand Cru</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château De Callac Prestige 2018</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Franck Phelan Saint-Estèphe 2016</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Les Carregardes Médoc</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Maucaillou Moulis 2018</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Rieussec Bordeaux Blanc 2016</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Saint Michel Sauternes</td>
+        <td> 500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Domaine Bosquet Pinot Noir Crd Igp</td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Salento Primitivo</td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Primitivo Di Manduria</td>
+        <td> 450,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Rochet Mazet Cabernet Sauvignon</td>
+        <td> 350,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Calvet Cabernet Sauvignon Rouge</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Saint Chinian Rochet Mazet</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Côtes Du Rhône</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Les Clefs De Terre Dieu Syrah Rouge</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Terre Dieu Merlot Syrah Rouge</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Terre Des Anges Cabernet Sauvignon Rouge 2022</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Terre Dieu Merlot Syrah Rouge</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Terre Des Anges Merlot 2021</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Terre Des Anges Merlot 2023</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Bel-Air Bordeaux Superieur</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Château Haut Pavarie</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>B&amp;G Merlot Reserve Wine</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>terrois de saint-jacques bordeaux 2019</td>
+        <td> 250,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>larguillet bordeaux 2021</td>
+        <td> 250,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>chateau haut mouleyre bordeaux 2020</td>
+        <td> 250,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gatao 75cl</td>
+        <td> 250,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Verre De Vin Maison Rouge</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Champagnes Et Vins Mousseux/Champagnes And Sparkling Wines</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="champagne">
+        <td>Champagnes</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Champagne Brut Dom Pérignon</td>
+        <td> 3,000,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Grand Siècle</td>
+        <td> 2,600,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Ruinart Blanc</td>
+        <td> 1,500,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Veuve Clicquot</td>
+        <td> 1,200,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Taittinger Millésime</td>
+        <td> 1,200,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Moët &amp; Chandon Ice</td>
+        <td> 1,100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Moët &amp; Chandon Nectar</td>
+        <td> 1,100,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gimonnet Gonet</td>
+        <td> 1,000,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Moët &amp; Chandon Impérial</td>
+        <td> 1,000,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Moët &amp; Chandon Rosé</td>
+        <td> 1,000,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Laurent Perrier</td>
+        <td> 1,000,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Taittinger Cuvée Prestige</td>
+        <td> 1,000,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Taittinger Nocturne</td>
+        <td> 1,000,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="sparklingwines">
+        <td>Vins Mousseux </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Avec Alcool</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Prosecco</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Freixenet</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Kraemer Brut</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Kraemer Demi-Sec</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Alita Sweet</td>
+        <td> 250,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gatao</td>
+        <td> 300,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Alita Chardonnay</td>
+        <td> 250,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="freealcohol">
+        <td>Sans Alcool</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Alita Livi</td>
+        <td> 250,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jc Le Roux</td>
+        <td> 250,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Heaven Vin Blanc</td>
+        <td> 200,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Heaven Vin Rouge</td>
+        <td> 200,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="cocktails">
+        <td>Nos Cocktails  Alcoolises</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Sangria Carafe( Red Wine Rhum,Tequilla Et Triple Sec)</td>
+        <td> 200,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Long Island(Vodka, Tequila, Gin, Rhum Blanc, Triple Sec Et Coca Cola)</td>
+        <td> 70,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Eden Garden Cocktail( Campari, Gin, Vodka, Cointreau, Jus De Passion, Et Grenadine)</td>
+        <td> 70,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Sex On The Beach( Rhum, Vodka, Gin, Jus De Passion, Et Grenadine)</td>
+        <td> 60,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Kir Simple(Vin Blanc, Et Crème De Cassis)</td>
+        <td> 60,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Zombie(Rhum, Cointreau, Gin Et Jus De Passion)</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pinacolada(Rhum, Lait De Noix De Coco, Et Jus D’ananas Frais)</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>White Russian(Vodka, Kalhua, Bailey’s)</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Black Russian(Vodka, Kalhua Et Crème De Cassis)</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Mojito(Rhum Blanc, Eau Pétillante, Menthe, Citron Et Sirop De Sucre)</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Margarita( Tequila, Cointreau Et Jus De Citron)</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Cosmopolitan(Vodka,Cointreau,Jus De Citron,Et Grenadine)</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>B52( Khalua,Baileys Et Cointreau)</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jagger  Bomb( Jagger Meista, Red Bull)</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Panache(Bière, Sprite Et Grenadine)</td>
+        <td> 50,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Tequila Sunrise(Tequila, Jus De Passion, Citron Et Grenadine)</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Cuba Libre(Rhum Blanc, Jus De Citron Et Coca Cola)</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Lemon Drop(Cointreau, Vodka, Et Jus De Citron)</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Kamikaze( Vodka, Cointreau Et Jus De Citron)</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Margarita Frozen A La Fraise( Tequila, Cointreau, Fraise Et Citron)</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Negroni( Campari, Martini)</td>
+        <td> 40,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nos Cocktails Sans Alcool</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Sweet Red ( Jus De Passion, Grenadine Et Cubes De Glaçons)</td>
+        <td> 30,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Virgin Mojito( Eau Pétillante, Sprite, Menthe Et Jus De Citron)</td>
+        <td> 30,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pinacolada(Lait De Noix De Coco, Jus D’ananas Frais Et Glaçons)</td>
+        <td> 35,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Kasuku(Jus De Passion , Et Grenadine)</td>
+        <td> 30,000 </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
 					</table>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script>
+		(function () {
+			const table = document.querySelector(".food-menu .menu-body table");
+			if (!table) return;
+
+			const rows = Array.from(table.querySelectorAll("tr"));
+			const hasDigit = (value) => /\d/.test(value);
+			const normalize = (value) => value.replace(/\s+/g, " ").trim();
+			const hasImage = (html) => /<img\b/i.test(html || "");
+			const cleanTitle = (value) =>
+				normalize(value)
+					.replace(/\s*\/?\s*(godet|bouteille)\s*(\/\s*(godet|bouteille)\s*)*/gi, "")
+					.replace(/\s*\/\s*$/, "")
+					.trim();
+			const formatPrice = (prices) => {
+				if (!prices.length) return "";
+				const joined = prices.join(" / ");
+				return /fbu$/i.test(joined) ? joined : `${joined} FBU`;
+			};
+
+			rows.forEach((row) => {
+				const cells = Array.from(row.querySelectorAll("td"));
+				if (!cells.length) return;
+
+				const cellData = cells.map((td) => ({
+					text: normalize(td.textContent || ""),
+					html: td.innerHTML.trim(),
+				}));
+
+				const nonEmpty = cellData
+					.map((cell, index) => ({ ...cell, index }))
+					.filter((cell) => cell.text.length > 0 && !hasImage(cell.html));
+
+				if (!nonEmpty.length) {
+					row.remove();
+					return;
+				}
+
+				const firstCell = nonEmpty[0];
+				const priceValues = nonEmpty
+					.slice(1)
+					.map((cell) => cell.text)
+					.filter((text) => hasDigit(text));
+
+				const titleLike =
+					nonEmpty.length === 1 ||
+					(!priceValues.length &&
+						/non[s]?\b|vins?|champagnes?|cocktails?|tequila|vodka|gin|whisky|cognac|rhum|liqueurs?|bi[eè]res?|sans alcool/i.test(
+							firstCell.text
+						));
+
+				row.innerHTML = "";
+
+				if (titleLike) {
+					const td = document.createElement("td");
+					td.className = "section-title";
+					td.colSpan = 2;
+					const anchor = cells[0].querySelector(".menu-anchor");
+					if (anchor) {
+						td.appendChild(anchor.cloneNode(true));
+					}
+					td.appendChild(document.createTextNode(cleanTitle(firstCell.text)));
+					row.appendChild(td);
+					return;
+				}
+
+				// Drop helper rows like "Godet / Bouteille" that are not menu items.
+				if (
+					!priceValues.length &&
+					/(godet|bouteille)/i.test(firstCell.text)
+				) {
+					row.remove();
+					return;
+				}
+
+				const nameTd = document.createElement("td");
+				nameTd.className = "item-name";
+				nameTd.innerHTML = firstCell.html;
+
+				const priceTd = document.createElement("td");
+				priceTd.className = "item-price";
+				priceTd.textContent = formatPrice(priceValues);
+
+				if (!priceTd.textContent) {
+					row.remove();
+					return;
+				}
+
+				row.appendChild(nameTd);
+				row.appendChild(priceTd);
+			});
+		})();
+	</script>
 </body>
 </html>

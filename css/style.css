@@ -66,6 +66,16 @@ body {
 	transform: scale(1.02);
 }
 
+.concert-thumb {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: 82% 18%;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
 #img {
 	border-radius: 50%;
 	max-width: 50px;
@@ -257,6 +267,11 @@ table img {
 		max-width: 40px;
 	}
 
+	.concert-thumb {
+		width: 40px;
+		height: 40px;
+	}
+
 	.menu-body {
 		border-right: 2px double #027789;
 		border-left: 2px double #027789;
@@ -298,6 +313,11 @@ table img {
 
 	#img {
 		max-width: 35px;
+	}
+
+	.concert-thumb {
+		width: 35px;
+		height: 35px;
 	}
 
 	.menu-body {
@@ -383,6 +403,11 @@ table img {
 
 	#img {
 		max-width: 30px;
+	}
+
+	.concert-thumb {
+		width: 30px;
+		height: 30px;
 	}
 
 	.food-menu-title h3, .beverage-menu-title h3 {

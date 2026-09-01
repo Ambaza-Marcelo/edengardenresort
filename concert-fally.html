@@ -30,12 +30,25 @@
 
 		.concert-hero {
 			position: relative;
-			min-height: 420px;
-			padding: 24px 18px 48px;
+			min-height: auto;
+			padding: 20px 16px 32px;
 			text-align: center;
-			background:
-				linear-gradient(180deg, rgba(7,20,22,.55) 0%, rgba(7,20,22,.88) 70%, #071416 100%),
-				url("images/WELCOME.png") center / cover no-repeat;
+			background: #071416;
+		}
+
+		.poster-frame {
+			max-width: min(680px, 100%);
+			margin: 10px auto 22px;
+			border-radius: 16px;
+			overflow: hidden;
+			border: 1px solid rgba(212, 175, 55, .5);
+			box-shadow: 0 18px 48px rgba(0,0,0,.55);
+		}
+
+		.poster-frame img {
+			width: 100%;
+			height: auto;
+			display: block;
 		}
 
 		.back-link {
@@ -96,6 +109,100 @@
 		}
 		.event-meta strong { color: var(--gold-soft); font-weight: 600; }
 
+		.pay-banner {
+			max-width: min(720px, 100%);
+			margin: 22px auto 0;
+			text-align: left;
+			padding: 16px 16px 18px;
+			border: 2px solid var(--gold);
+			background: linear-gradient(135deg, rgba(212, 175, 55, .22), rgba(2, 119, 137, .18));
+			border-radius: 16px;
+		}
+		.pay-banner h2 {
+			font-family: "Outfit", Arial, sans-serif;
+			font-size: 15px;
+			font-weight: 700;
+			color: var(--gold-soft);
+			margin: 0 0 4px;
+			letter-spacing: .06em;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		.pay-name {
+			text-align: center;
+			color: var(--cream);
+			font-size: 13px;
+			margin: 0 0 14px;
+			font-weight: 600;
+		}
+		.pay-methods {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+			gap: 8px;
+			margin-bottom: 14px;
+		}
+		.pay-methods div {
+			background: rgba(7, 20, 22, .45);
+			border: 1px solid rgba(212, 175, 55, .35);
+			border-radius: 10px;
+			padding: 10px 8px;
+			text-align: center;
+		}
+		.pay-methods span {
+			display: block;
+			font-size: 10px;
+			letter-spacing: .08em;
+			text-transform: uppercase;
+			color: var(--muted);
+			margin-bottom: 4px;
+		}
+		.pay-methods strong {
+			display: block;
+			color: var(--gold);
+			font-size: 16px;
+			font-weight: 800;
+			letter-spacing: .02em;
+		}
+		.pay-advance {
+			margin: 0 0 12px;
+			font-size: 13px;
+			color: var(--cream);
+			line-height: 1.5;
+			text-align: center;
+		}
+		.pay-contact {
+			display: block;
+			text-align: center;
+			background: var(--gold);
+			color: var(--ink);
+			font-weight: 800;
+			padding: 12px 14px;
+			border-radius: 999px;
+			text-decoration: none;
+			font-size: 14px;
+		}
+		.pay-contact:hover { background: var(--gold-soft); color: var(--ink); }
+		.pay-contact small {
+			display: block;
+			font-weight: 600;
+			font-size: 11px;
+			letter-spacing: .04em;
+			margin-bottom: 2px;
+		}
+
+		.pay-bar {
+			background: var(--gold);
+			color: var(--ink);
+			text-align: center;
+			padding: 8px 12px;
+			font-weight: 700;
+			font-size: clamp(11px, 2.3vw, 13px);
+			letter-spacing: .03em;
+			line-height: 1.45;
+			box-shadow: 0 6px 18px rgba(0,0,0,.35);
+		}
+		.pay-bar span { display: block; font-weight: 600; font-size: .92em; }
+
 		.gold-rule {
 			width: 84px;
 			height: 2px;
@@ -103,17 +210,19 @@
 			background: linear-gradient(90deg, transparent, var(--gold), transparent);
 		}
 
-		.nav-pills {
+		.sticky-head {
 			position: sticky;
 			top: 0;
 			z-index: 20;
+		}
+
+		.nav-pills {
 			display: flex;
 			gap: 8px;
 			overflow-x: auto;
 			padding: 12px 14px;
-			background: rgba(7, 20, 22, .92);
+			background: rgba(7, 20, 22, .96);
 			backdrop-filter: blur(10px);
-			border-bottom: 1px solid rgba(212, 175, 55, .22);
 			-webkit-overflow-scrolling: touch;
 		}
 		.nav-pills a {
@@ -143,7 +252,7 @@
 
 		.menu-section {
 			margin: 28px 0 40px;
-			scroll-margin-top: 68px;
+			scroll-margin-top: 122px;
 		}
 
 		.section-head {
@@ -242,12 +351,13 @@
 			.section-head img { width: 64px; height: 64px; border-radius: 12px; }
 			.item { padding: 12px; }
 			.item-name { font-size: 14px; }
-			.item-price { font-size: 13px; }
+			.pay-methods { grid-template-columns: 1fr 1fr; }
 		}
 
 		@media print {
 			body { background: #fff; color: #111; }
 			.back-link, .nav-pills { display: none; }
+			.pay-bar { position: static; box-shadow: none; }
 			.concert-hero { background: none; color: #111; min-height: auto; }
 			.item-price, .section-head h2, .concert-hero h1 span { color: #027789; }
 			.card { border: 1px solid #ccc; }
@@ -258,28 +368,56 @@
 	<header class="concert-hero">
 		<a href="index.html" class="back-link">← Retour / Back</a>
 		<img class="logo" src="images/Eden Garden-01.png" alt="Eden Garden Resort">
+		<div class="poster-frame">
+			<img src="images/affiche-fally-ipupa.png?v=2" alt="Une soirée royale avec Fally Ipupa, concert live à Bujumbura le 06 septembre 2026 à Eden Garden Resort">
+		</div>
 		<p class="eyebrow">Eden Garden Resort · Bujumbura</p>
-		<h1>Concert Fally 2026<span>Menu Snacks</span></h1>
+		<h1>Menu Snacks<span>Concert Fally 2026</span></h1>
 		<div class="gold-rule"></div>
 		<p class="event-meta">
-			<strong>Fally Ipupa</strong> · Dimanche 06 septembre 2026<br>
-			Eden Garden Resort, Bujumbura
+			<strong>Fally Ipupa</strong> · Dimanche 06 septembre 2026 · 17h00<br>
+			Eden Garden Resort (ex Bora Bora Beach), Bujumbura
 		</p>
+		<aside class="pay-banner" id="paiement" aria-label="Mode de paiement">
+			<h2>Paiement des consommations</h2>
+			<p class="pay-name">Au nom d’Eden Garden Resort</p>
+			<div class="pay-methods">
+				<div><span>Cash</span><strong>Espèces</strong></div>
+				<div><span>Lumicash</span><strong>333000</strong></div>
+				<div><span>Bancobu eNoti</span><strong>44188</strong></div>
+				<div><span>Pesa Flash</span><strong>0034</strong></div>
+				<div><span>Lipa na CRDB</span><strong>000115</strong></div>
+			</div>
+			<p class="pay-advance">
+				Vous pouvez prévenir vos consommations à l’avance et payer à l’avance.
+				Notre équipe expérimentée sera proche de vous ce jour pour servir vos commandes.
+			</p>
+			<a class="pay-contact" href="https://api.whatsapp.com/send?phone=+25779500500" target="_blank" rel="noopener">
+				<small>Pour payer vos consommations à l’avance</small>
+				+257 79 500 500
+			</a>
+		</aside>
 	</header>
 
-	<nav class="nav-pills" aria-label="Catégories du menu">
-		<a href="index.html" class="nav-home">← Accueil</a>
-		<a href="#brochettes">Brochettes</a>
-		<a href="#snacks">Snacks</a>
-		<a href="#eaux">Eaux</a>
-		<a href="#bieres">Bières</a>
-		<a href="#blancs">Vins blancs</a>
-		<a href="#rouges">Vins rouges</a>
-		<a href="#mousseux">Mousseux</a>
-		<a href="#champagnes">Champagnes</a>
-		<a href="#spiritueux">Spiritueux</a>
-		<a href="#cocktails">Cocktails</a>
-	</nav>
+	<div class="sticky-head">
+		<nav class="nav-pills" aria-label="Catégories du menu">
+			<a href="index.html" class="nav-home">← Accueil</a>
+			<a href="#brochettes">Brochettes</a>
+			<a href="#snacks">Snacks</a>
+			<a href="#eaux">Eaux</a>
+			<a href="#bieres">Bières</a>
+			<a href="#blancs">Vins blancs</a>
+			<a href="#rouges">Vins rouges</a>
+			<a href="#mousseux">Mousseux</a>
+			<a href="#champagnes">Champagnes</a>
+			<a href="#spiritueux">Spiritueux</a>
+			<a href="#cocktails">Cocktails</a>
+		</nav>
+		<div class="pay-bar" role="status">
+			CASH · Lumicash 333000 · Bancobu eNoti 44188 · Pesa Flash 0034 · Lipa na CRDB 000115
+			<span>Au nom d’Eden Garden Resort · Précommande : +257 79 500 500</span>
+		</div>
+	</div>
 
 	<main class="concert-wrap">
 		<section class="menu-section" id="brochettes">
@@ -646,7 +784,12 @@
 
 	<footer class="concert-footer">
 		<strong>Eden Garden Resort</strong><br>
-		Concert Fally Ipupa · 06 septembre 2026 · Bujumbura
+		Concert Fally Ipupa · 06 septembre 2026 · Bujumbura<br>
+		<span style="display:inline-block;margin-top:10px;color:#f0d78c;font-weight:700;">
+			Paiement CASH · Lumicash 333000 · Bancobu eNoti 44188 · Pesa Flash 0034 · Lipa na CRDB 000115<br>
+			Au nom d’Eden Garden Resort
+		</span><br>
+		<a href="https://api.whatsapp.com/send?phone=+25779500500" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;color:#d4af37;font-weight:700;">Précommande / paiement anticipé : +257 79 500 500</a>
 	</footer>
 </body>
 </html>

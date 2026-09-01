@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Menu snacks Concert Fally Ipupa — 06 septembre 2026, Eden Garden Resort, Bujumbura">
+	<title>Concert Fally 2026 — Menu Snacks | Eden Garden Resort</title>
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--gold: #d4af37;
+			--gold-soft: #f0d78c;
+			--teal: #027789;
+			--ink: #071416;
+			--cream: #f6efe2;
+			--muted: #c9bfae;
+		}
+
+		* { box-sizing: border-box; margin: 0; padding: 0; }
+		html { scroll-behavior: smooth; }
+		body {
+			font-family: "Outfit", Arial, sans-serif;
+			background: #071416;
+			color: var(--cream);
+			line-height: 1.5;
+		}
+
+		.concert-hero {
+			position: relative;
+			min-height: 420px;
+			padding: 24px 18px 48px;
+			text-align: center;
+			background:
+				linear-gradient(180deg, rgba(7,20,22,.55) 0%, rgba(7,20,22,.88) 70%, #071416 100%),
+				url("images/WELCOME.png") center / cover no-repeat;
+		}
+
+		.back-link {
+			position: absolute;
+			left: 16px;
+			top: 16px;
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			background: rgba(2, 119, 137, .9);
+			color: #fff;
+			padding: 9px 16px;
+			border-radius: 24px;
+			text-decoration: none;
+			font-size: 13px;
+			z-index: 2;
+		}
+		.back-link:hover { background: #035d6b; }
+
+		.concert-hero img.logo {
+			width: min(160px, 42vw);
+			margin: 48px auto 18px;
+			display: block;
+			background: rgba(255,255,255,.12);
+			border-radius: 50%;
+			padding: 10px;
+			filter: drop-shadow(0 8px 18px rgba(0,0,0,.45));
+		}
+
+		.eyebrow {
+			letter-spacing: .28em;
+			text-transform: uppercase;
+			font-size: 11px;
+			color: var(--gold);
+			margin-bottom: 10px;
+		}
+
+		.concert-hero h1 {
+			font-family: "Cormorant Garamond", Georgia, serif;
+			font-size: clamp(32px, 7vw, 64px);
+			font-weight: 700;
+			line-height: 1.05;
+			color: #fff;
+		}
+
+		.concert-hero h1 span {
+			display: block;
+			font-style: italic;
+			color: var(--gold-soft);
+			font-size: .72em;
+			margin-top: 4px;
+		}
+
+		.event-meta {
+			margin-top: 16px;
+			color: var(--cream);
+			font-size: clamp(14px, 2.4vw, 17px);
+		}
+		.event-meta strong { color: var(--gold-soft); font-weight: 600; }
+
+		.gold-rule {
+			width: 84px;
+			height: 2px;
+			margin: 18px auto;
+			background: linear-gradient(90deg, transparent, var(--gold), transparent);
+		}
+
+		.nav-pills {
+			position: sticky;
+			top: 0;
+			z-index: 20;
+			display: flex;
+			gap: 8px;
+			overflow-x: auto;
+			padding: 12px 14px;
+			background: rgba(7, 20, 22, .92);
+			backdrop-filter: blur(10px);
+			border-bottom: 1px solid rgba(212, 175, 55, .22);
+			-webkit-overflow-scrolling: touch;
+		}
+		.nav-pills a {
+			flex: 0 0 auto;
+			color: var(--cream);
+			text-decoration: none;
+			border: 1px solid rgba(212, 175, 55, .35);
+			border-radius: 999px;
+			padding: 8px 14px;
+			font-size: 12px;
+			letter-spacing: .04em;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
+		.nav-pills a:hover { background: var(--gold); color: var(--ink); }
+		.nav-pills a.nav-home {
+			background: var(--teal);
+			border-color: var(--teal);
+			color: #fff;
+		}
+
+		.concert-wrap {
+			max-width: 980px;
+			margin: 0 auto;
+			padding: 18px 14px 80px;
+		}
+
+		.menu-section {
+			margin: 28px 0 40px;
+			scroll-margin-top: 68px;
+		}
+
+		.section-head {
+			display: grid;
+			grid-template-columns: 92px 1fr;
+			gap: 16px;
+			align-items: center;
+			margin-bottom: 16px;
+		}
+		.section-head img {
+			width: 92px;
+			height: 92px;
+			object-fit: cover;
+			border-radius: 18px;
+			border: 2px solid rgba(212, 175, 55, .45);
+		}
+		.section-head h2 {
+			font-family: "Cormorant Garamond", Georgia, serif;
+			font-size: clamp(26px, 4vw, 38px);
+			color: var(--gold-soft);
+			line-height: 1.1;
+		}
+		.section-head p {
+			color: var(--muted);
+			font-size: 13px;
+			margin-top: 4px;
+		}
+
+		.card {
+			background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+			border: 1px solid rgba(212, 175, 55, .18);
+			border-radius: 18px;
+			overflow: hidden;
+		}
+
+		.note {
+			padding: 12px 16px;
+			font-size: 13px;
+			color: var(--gold-soft);
+			background: rgba(212, 175, 55, .08);
+			border-bottom: 1px solid rgba(212, 175, 55, .12);
+			font-style: italic;
+		}
+
+		.item {
+			display: flex;
+			justify-content: space-between;
+			gap: 16px;
+			align-items: baseline;
+			padding: 14px 16px;
+			border-bottom: 1px solid rgba(255,255,255,.06);
+		}
+		.item:last-child { border-bottom: 0; }
+		.item-name {
+			font-weight: 500;
+			font-size: 15px;
+		}
+		.item-name small {
+			display: block;
+			color: var(--muted);
+			font-weight: 400;
+			font-size: 12px;
+			margin-top: 2px;
+		}
+		.item-price {
+			flex: 0 0 auto;
+			color: var(--gold);
+			font-weight: 700;
+			white-space: nowrap;
+			font-size: 14px;
+		}
+
+		.subhead {
+			padding: 12px 16px 4px;
+			color: var(--teal);
+			letter-spacing: .16em;
+			text-transform: uppercase;
+			font-size: 11px;
+			font-weight: 700;
+			background: rgba(2, 119, 137, .12);
+		}
+
+		.concert-footer {
+			text-align: center;
+			padding: 28px 16px 40px;
+			color: var(--muted);
+			font-size: 13px;
+			border-top: 1px solid rgba(212, 175, 55, .16);
+		}
+		.concert-footer strong { color: var(--gold-soft); }
+
+		@media (max-width: 640px) {
+			.back-link { position: static; margin-bottom: 8px; }
+			.concert-hero { padding-top: 16px; min-height: auto; }
+			.section-head { grid-template-columns: 64px 1fr; gap: 12px; }
+			.section-head img { width: 64px; height: 64px; border-radius: 12px; }
+			.item { padding: 12px; }
+			.item-name { font-size: 14px; }
+			.item-price { font-size: 13px; }
+		}
+
+		@media print {
+			body { background: #fff; color: #111; }
+			.back-link, .nav-pills { display: none; }
+			.concert-hero { background: none; color: #111; min-height: auto; }
+			.item-price, .section-head h2, .concert-hero h1 span { color: #027789; }
+			.card { border: 1px solid #ccc; }
+		}
+	</style>
+</head>
+<body>
+	<header class="concert-hero">
+		<a href="index.html" class="back-link">← Retour / Back</a>
+		<img class="logo" src="images/Eden Garden-01.png" alt="Eden Garden Resort">
+		<p class="eyebrow">Eden Garden Resort · Bujumbura</p>
+		<h1>Concert Fally 2026<span>Menu Snacks</span></h1>
+		<div class="gold-rule"></div>
+		<p class="event-meta">
+			<strong>Fally Ipupa</strong> · Dimanche 06 septembre 2026<br>
+			Eden Garden Resort, Bujumbura
+		</p>
+	</header>
+
+	<nav class="nav-pills" aria-label="Catégories du menu">
+		<a href="index.html" class="nav-home">← Accueil</a>
+		<a href="#brochettes">Brochettes</a>
+		<a href="#snacks">Snacks</a>
+		<a href="#eaux">Eaux</a>
+		<a href="#bieres">Bières</a>
+		<a href="#blancs">Vins blancs</a>
+		<a href="#rouges">Vins rouges</a>
+		<a href="#mousseux">Mousseux</a>
+		<a href="#champagnes">Champagnes</a>
+		<a href="#spiritueux">Spiritueux</a>
+		<a href="#cocktails">Cocktails</a>
+	</nav>
+
+	<main class="concert-wrap">
+		<section class="menu-section" id="brochettes">
+			<div class="section-head">
+				<img src="images/beef.jpg" alt="Brochettes">
+				<div>
+					<h2>Brochettes / Skewers</h2>
+					<p>Grillées à la commande</p>
+				</div>
+			</div>
+			<div class="card">
+				<p class="note">Toute commande est garnie de frites de pommes de terre.</p>
+				<div class="item">
+					<div class="item-name">Poisson <small>Fish</small></div>
+					<div class="item-price">90,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Chèvre <small>Goat</small></div>
+					<div class="item-price">90,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Poulet <small>Chicken</small></div>
+					<div class="item-price">80,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Bœuf <small>Beef</small></div>
+					<div class="item-price">75,000 FBU</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="menu-section" id="snacks">
+			<div class="section-head">
+				<img src="images/samossa.jpg" alt="Amuses-bouches">
+				<div>
+					<h2>Amuses-bouches / Snacks</h2>
+					<p>À partager pendant le concert</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="item">
+					<div class="item-name">Planche Eden Garden <small>Eden Garden platter</small></div>
+					<div class="item-price">100,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Samossa de bœuf ou de légume <small>Veggie or beef samosa</small></div>
+					<div class="item-price">35,000 FBU</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="menu-section" id="eaux">
+			<div class="section-head">
+				<img src="images/water.jpg" alt="Eaux et boissons énergétiques">
+				<div>
+					<h2>Eaux &amp; énergétiques</h2>
+					<p>Waters &amp; energy drinks</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="item">
+					<div class="item-name">Red Bull</div>
+					<div class="item-price">22,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Eau plate 50 cl</div>
+					<div class="item-price">7,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Eau pétillante</div>
+					<div class="item-price">7,000 FBU</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="menu-section" id="bieres">
+			<div class="section-head">
+				<img src="images/beers.jpg" alt="Bières">
+				<div>
+					<h2>Bières / Beers</h2>
+					<p>Sélection concert</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="item">
+					<div class="item-name">Smirnoff canette</div>
+					<div class="item-price">30,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Stella Artois 33 cl</div>
+					<div class="item-price">25,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Leffe Blonde 33 cl</div>
+					<div class="item-price">25,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Savana</div>
+					<div class="item-price">20,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Serengeti Premium Lager 33 cl</div>
+					<div class="item-price">20,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Basembi Extra Lager 50 cl</div>
+					<div class="item-price">15,000 FBU</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="menu-section" id="blancs">
+			<div class="section-head">
+				<img src="images/whitewine.jpg" alt="Vins blancs">
+				<div>
+					<h2>Vins blancs / White wines</h2>
+					<p>Bouteilles</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="item">
+					<div class="item-name">Sancerre</div>
+					<div class="item-price">700,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Pouilly Fumé</div>
+					<div class="item-price">600,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Sauternes Carmes de Rieussec 2019</div>
+					<div class="item-price">500,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Chardonnay Cabochon du Sud 2022</div>
+					<div class="item-price">300,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Zilliken Elbling Filius</div>
+					<div class="item-price">300,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Zilliken Riesling Trocken</div>
+					<div class="item-price">300,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Terre des Anges</div>
+					<div class="item-price">300,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Pierre Rivière Chardonnay</div>
+					<div class="item-price">250,000 FBU</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="menu-section" id="rouges">
+			<div class="section-head">
+				<img src="images/redwine.jpg" alt="Vins rouges">
+				<div>
+					<h2>Vins rouges / Red wines</h2>
+					<p>75 cl</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="item">
+					<div class="item-name">Château Gruaud Larose 2006 Saint-Julien Grand Cru <small>75 cl</small></div>
+					<div class="item-price">2,000,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Château La Tour Carnet 2019 Grand Cru <small>75 cl</small></div>
+					<div class="item-price">700,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Château Haut-Piquat Saint-Émilion Lussac 2006 <small>75 cl</small></div>
+					<div class="item-price">700,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Fiole du Pape <small>75 cl</small></div>
+					<div class="item-price">700,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Zilliken Barrique (Spätburgunder) <small>75 cl</small></div>
+					<div class="item-price">300,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Terre des Anges Merlot 2021 <small>75 cl</small></div>
+					<div class="item-price">300,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Terre des Anges Cabernet Sauvignon Rouge 2022 <small>75 cl</small></div>
+					<div class="item-price">300,000 FBU</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="menu-section" id="mousseux">
+			<div class="section-head">
+				<img src="images/prosecco.jpg" alt="Vins mousseux">
+				<div>
+					<h2>Vins mousseux</h2>
+					<p>Sparkling wines</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="subhead">Sans alcool / Alcohol-free</div>
+				<div class="item">
+					<div class="item-name">Alita Livi <small>75 cl</small></div>
+					<div class="item-price">250,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Alita Sweet <small>75 cl</small></div>
+					<div class="item-price">250,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Heaven Vin Rouge <small>75 cl</small></div>
+					<div class="item-price">200,000 FBU</div>
+				</div>
+				<div class="subhead">Avec alcool / With alcohol</div>
+				<div class="item">
+					<div class="item-name">Jeanne de Coast <small>75 cl</small></div>
+					<div class="item-price">500,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Freixenet <small>75 cl</small></div>
+					<div class="item-price">300,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Prosecco <small>75 cl</small></div>
+					<div class="item-price">300,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Kraemer Demi-Sec <small>75 cl</small></div>
+					<div class="item-price">300,000 FBU</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="menu-section" id="champagnes">
+			<div class="section-head">
+				<img src="images/champagne.jpg" alt="Champagnes">
+				<div>
+					<h2>Champagnes</h2>
+					<p>Pour célébrer la soirée</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="item">
+					<div class="item-name">Dom Pérignon Brut</div>
+					<div class="item-price">3,000,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Ruinart</div>
+					<div class="item-price">1,500,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Veuve Clicquot</div>
+					<div class="item-price">1,200,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Moët Impérial</div>
+					<div class="item-price">1,000,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Laurent-Perrier</div>
+					<div class="item-price">1,000,000 FBU</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="menu-section" id="spiritueux">
+			<div class="section-head">
+				<img src="images/jackdaniel.jpg" alt="Whisky, liqueurs et cognacs">
+				<div>
+					<h2>Whisky, liqueurs &amp; cognacs</h2>
+					<p>100 cl</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="item">
+					<div class="item-name">Hennessy V.S.O.P <small>100 cl</small></div>
+					<div class="item-price">1,300,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Martell V.S.O.P <small>100 cl</small></div>
+					<div class="item-price">1,300,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Courvoisier <small>100 cl</small></div>
+					<div class="item-price">1,000,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Hennessy V.S <small>100 cl</small></div>
+					<div class="item-price">800,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Double Black <small>100 cl</small></div>
+					<div class="item-price">750,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Black Label <small>100 cl</small></div>
+					<div class="item-price">750,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Jack Daniel’s <small>100 cl</small></div>
+					<div class="item-price">750,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Red Label <small>100 cl</small></div>
+					<div class="item-price">650,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Jameson <small>100 cl</small></div>
+					<div class="item-price">650,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Chivas Regal 12 ans <small>100 cl</small></div>
+					<div class="item-price">650,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Martini blanc ou rouge <small>100 cl</small></div>
+					<div class="item-price">400,000 FBU</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="menu-section" id="cocktails">
+			<div class="section-head">
+				<img src="images/cocktail.jpg" alt="Cocktails">
+				<div>
+					<h2>Cocktails</h2>
+					<p>Avec ou sans alcool</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="subhead">Avec alcool / With alcohol</div>
+				<div class="item">
+					<div class="item-name">Long Island</div>
+					<div class="item-price">80,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Mojito</div>
+					<div class="item-price">60,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Sex on the Beach</div>
+					<div class="item-price">60,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Piña Colada</div>
+					<div class="item-price">60,000 FBU</div>
+				</div>
+				<div class="subhead">Sans alcool / Alcohol-free</div>
+				<div class="item">
+					<div class="item-name">Piña Colada sans alcool</div>
+					<div class="item-price">35,000 FBU</div>
+				</div>
+				<div class="item">
+					<div class="item-name">Mojito sans alcool</div>
+					<div class="item-price">30,000 FBU</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="concert-footer">
+		<strong>Eden Garden Resort</strong><br>
+		Concert Fally Ipupa · 06 septembre 2026 · Bujumbura
+	</footer>
+</body>
+</html>

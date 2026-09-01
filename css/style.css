@@ -38,7 +38,7 @@ body {
 }
 
 /* Link Buttons */
-.link1, .link2, .link3, .link4 {
+.link1, .link2, .link3, .link4, .link-concert {
 	background-color: #027789;
 	color: #fff;
 	border-radius: 50px;
@@ -52,6 +52,17 @@ body {
 
 .link1:hover, .link2:hover, .link3:hover, .link4:hover {
 	background-color: #035d6b;
+	transform: scale(1.02);
+}
+
+.link-concert {
+	background: linear-gradient(135deg, #c9a227 0%, #8a6a12 100%);
+	font-weight: 700;
+	letter-spacing: 0.3px;
+}
+
+.link-concert:hover {
+	background: linear-gradient(135deg, #e0b93a 0%, #a07c18 100%);
 	transform: scale(1.02);
 }
 
@@ -207,7 +218,7 @@ table img {
 
 /* Large Desktops */
 @media (max-width: 1900px) {
-	.link1, .link2, .link3, .link4 {
+	.link1, .link2, .link3, .link4, .link-concert {
 		max-width: 500px;
 		padding: 18px;
 	}
@@ -215,7 +226,7 @@ table img {
 
 /* Medium Desktops */
 @media (max-width: 1400px) {
-	.link1, .link2, .link3, .link4 {
+	.link1, .link2, .link3, .link4, .link-concert {
 		max-width: 450px;
 		padding: 16px;
 	}
@@ -232,7 +243,7 @@ table img {
 		font-size: 14px;
 	}
 
-	.link1, .link2, .link3, .link4 {
+	.link1, .link2, .link3, .link4, .link-concert {
 		max-width: 90%;
 		padding: 15px;
 		margin: 8px auto;
@@ -275,7 +286,7 @@ table img {
 		padding: 15px 5px;
 	}
 
-	.link1, .link2, .link3, .link4 {
+	.link1, .link2, .link3, .link4, .link-concert {
 		padding: 12px;
 		font-size: 14px;
 		margin: 6px auto;
@@ -360,7 +371,7 @@ table img {
 		padding: 10px 5px;
 	}
 
-	.link1, .link2, .link3, .link4 {
+	.link1, .link2, .link3, .link4, .link-concert {
 		padding: 10px;
 		font-size: 13px;
 		border-radius: 30px;
@@ -426,7 +437,7 @@ table img {
 		font-size: 11px;
 	}
 
-	.link1, .link2, .link3, .link4 {
+	.link1, .link2, .link3, .link4, .link-concert {
 		padding: 8px;
 		font-size: 12px;
 	}
@@ -466,7 +477,7 @@ table img {
 		font-size: 16px;
 	}
 
-	.link1, .link2, .link3, .link4 {
+	.link1, .link2, .link3, .link4, .link-concert {
 		padding: 10px;
 		margin: 5px auto;
 	}
@@ -487,7 +498,7 @@ table img {
 		color: #000;
 	}
 
-	.link1, .link2, .link3, .link4 {
+	.link1, .link2, .link3, .link4, .link-concert {
 		border: 1px solid #000;
 	}
 
